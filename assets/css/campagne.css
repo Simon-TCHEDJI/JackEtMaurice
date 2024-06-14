@@ -14,15 +14,40 @@
     background: rgba(245, 245, 248, 1);
 }
 
+.main .menu {
+    position: absolute;
+    bottom: 0;
+}
+
 .main .menu ul {
     width: 100vw;
     height: 61px;
-    padding: 12px 12px 0px 12px;
     display: flex;
     list-style: none;
-    background: red;
+    background: #FFFFFF;
 }
 
 .main .menu ul li {
-    width: calc(100vw/5);
+    width: calc(100vw/4);
+}
+
+.main .menu ul li {
+    height: 100%;
+}
+
+.main .menu ul li.active a .linklabel {
+    color: #FF5784;
+}
+
+.main .menu ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 6px;
+    text-decoration: none;
+}
+
+.main .menu ul li a .linkicon img {
+    height: 25px;
 }
