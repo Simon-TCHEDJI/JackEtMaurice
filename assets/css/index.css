@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..800&family=Poppins:wght@100;200;400;600;800&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background: url("../img/Frame bg.png");
+}
+
+.main .ctnlogo {
+    width: 100%;
+    height: auto;
+}
+
+.main .logo {
+    width: calc(100vw - 60px);
+    height: calc(100vw - 60px);
+    margin-top: 60px;
+}
+
+.main .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.main .title {
+    width: 285px;
+    height: 108px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.main .ligne {
+    width: 80%;
+    margin: 15px 0;
+    border: 2px solid rgba(255, 229, 5, 1);
+}
+
+.main p {
+    width: 354px;
+    height: 54px;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.main .btn {
+    width: 80%;
+    height: 51.86px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: rgba(255, 87, 132, 1);
+
+}
+
+.main .btn a {
+    width: 100%;
+    height: 51.86px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
