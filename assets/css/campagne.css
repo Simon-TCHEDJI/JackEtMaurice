@@ -112,10 +112,16 @@
     left: 0%;
 }
 
-.autre {
+.publication {
     height: 100vh;
     width: 100vw;
     background: red;
+}
+
+.strategie {
+    height: 100vh;
+    width: 100vw;
+    background: yellow;
 }
 
 .main .container .dynamic section form .duretitle {
