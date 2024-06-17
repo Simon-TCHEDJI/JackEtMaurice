@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..800&family=Poppins:wght@100;200;400;600;800&display=swap');
 
+:root {
+    --rosaColor: #FF5784;
+    --inputLabel: #9796A1;
+}
+
 *,
 ::before,
 ::after {
@@ -15,13 +20,14 @@
 }
 
 .main .menu {
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    z-index: 100;
 }
 
 .main .menu ul {
     width: 100vw;
-    height: 61px;
+    height: 60px;
     display: flex;
     list-style: none;
     background: #FFFFFF;
@@ -36,7 +42,7 @@
 }
 
 .main .menu ul li.active a .linklabel {
-    color: #FF5784;
+    color: var(--rosaColor);
 }
 
 .main .menu ul li a {
@@ -50,4 +56,230 @@
 
 .main .menu ul li a .linkicon img {
     height: 25px;
+}
+
+.main .container {
+    width: 100vw;
+    height: auto;
+}
+
+.main .container .menutop {
+    width: 90%;
+    height: auto;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    margin-left: 5%;
+    margin-top: 10px;
+    background: #FFFFFF80;
+}
+
+.main .container .menutop .linktop {
+    width: calc(100%/3);
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.main .container .menutop .linktop.active {
+    background: #FFFFFF;
+    color: var(--rosaColor);
+    border-radius: 10px;
+}
+
+.main .container .dynamic {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.main .container .dynamic .pageAction {
+    padding: 0 5%;
+    position: absolute;
+    left: -150vw;
+    transition: left .3s ease-in-out ;
+}
+
+.main .container .dynamic .pageAction.active {
+    position: absolute;
+    left: 0%;
+}
+
+.autre {
+    height: 100vh;
+    width: 100vw;
+    background: red;
+}
+
+.main .container .dynamic section form .duretitle {
+    width: 100%;
+    margin-top: 73px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    color: var(--rosaColor);
+}
+
+.main .container .dynamic section form .durelabel {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--inputLabel);
+}
+
+.main .container .dynamic section form select {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 15px 20px 45px 0px #E9E9E940;
+    outline: none;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+.main .container .dynamic section form .montligne {
+    text-align: right;
+    margin: 20px 0;
+}
+
+.main .container .dynamic section form .montligne span:nth-child(1) {
+    color: var(--rosaColor);
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.main .container .dynamic section form .montligne span:nth-child(2) {
+    color: #000000;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.main .container .dynamic section form .cardligne {
+    color: var(--rosaColor);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.main .container .dynamic section form .nbrCardLabel {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--inputLabel);
+}
+
+.main .container .dynamic section form .inputctr {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main .container .dynamic section form .inputctr input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 15px 20px 45px 0px #E9E9E940;
+    outline: none;
+    border-radius: 10px;
+}
+
+.main .container .dynamic section form .inputctr img {
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    right: 30px;
+}
+
+.main .container .dynamic section form .cardInfo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.main .container .dynamic section form .cardInfo .dateZone, 
+.main .container .dynamic section form .cardInfo .cvcZone {
+    width: 40%;
+    margin-right: 5%;
+}
+
+.main .container .dynamic section form .cardInfo .dateZone .inpZone {
+    display: flex;
+    background: red;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 15px 20px 45px 0px #E9E9E940;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.main .container .dynamic section form .cardInfo .dateZone .inpZone input {
+    width: 30px;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+}
+
+.main .container .dynamic section form .cardInfo .dateZone .inpZone span {
+    margin-right: 10px;
+}
+
+.main .container .dynamic section form .cardInfo .cvcZone .cvcLabel,
+.main .container .dynamic section form .cardInfo .dateZone .dateLabel,
+.main .container .dynamic section form .tituZone .tituLabel {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--inputLabel);
+}
+
+.main .container .dynamic section form .cardInfo .cvcZone input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 15px 20px 45px 0px #E9E9E940;
+    outline: none;
+    border-radius: 10px;
+}
+
+.main .container .dynamic section form .tituZone {
+    margin-top: 20px;
+}
+
+.main .container .dynamic section form .tituZone input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 15px 20px 45px 0px #E9E9E940;
+    outline: none;
+    border-radius: 10px;
+}
+
+.main .container .dynamic section form .btnZone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .container .dynamic section form .btnZone #btn {
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px 50px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--rosaColor);
 }
