@@ -22,6 +22,7 @@
 .main .menu {
     position: fixed;
     bottom: 0;
+    z-index: 100;
 }
 
 .main .menu ul {
@@ -60,9 +61,6 @@
 .main .container {
     width: 100vw;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .main .container .menutop {
@@ -70,6 +68,8 @@
     height: auto;
     position: fixed;
     display: flex;
+    z-index: 100;
+    margin-left: 5%;
     margin-top: 10px;
     background: #FFFFFF80;
 }
@@ -85,6 +85,7 @@
     font-weight: 300;
     line-height: 18px;
     text-align: center;
+    cursor: pointer;
 
 }
 
@@ -95,11 +96,29 @@
 }
 
 .main .container .dynamic {
-    width: 90%;
+    width: 100%;
     font-family: "Poppins", sans-serif;
 }
 
-.main .container .dynamic form .duretitle {
+.main .container .dynamic .pageAction {
+    padding: 0 5%;
+    position: absolute;
+    left: -150vw;
+    transition: left .3s ease-in-out ;
+}
+
+.main .container .dynamic .pageAction.active {
+    position: absolute;
+    left: 0%;
+}
+
+.autre {
+    height: 100vh;
+    width: 100vw;
+    background: red;
+}
+
+.main .container .dynamic section form .duretitle {
     width: 100%;
     margin-top: 73px;
     margin-bottom: 20px;
@@ -109,13 +128,13 @@
     color: var(--rosaColor);
 }
 
-.main .container .dynamic form .durelabel {
+.main .container .dynamic section form .durelabel {
     font-size: 14px;
     font-weight: 400;
     color: var(--inputLabel);
 }
 
-.main .container .dynamic form select {
+.main .container .dynamic section form select {
     width: 100%;
     height: 40px;
     padding-left: 10px;
@@ -126,45 +145,45 @@
     background: #FFFFFF;
 }
 
-.main .container .dynamic form .montligne {
+.main .container .dynamic section form .montligne {
     text-align: right;
     margin: 20px 0;
 }
 
-.main .container .dynamic form .montligne span:nth-child(1) {
+.main .container .dynamic section form .montligne span:nth-child(1) {
     color: var(--rosaColor);
     margin-right: 10px;
     font-size: 16px;
     font-weight: 400;
 }
 
-.main .container .dynamic form .montligne span:nth-child(2) {
+.main .container .dynamic section form .montligne span:nth-child(2) {
     color: #000000;
     margin-right: 10px;
     font-size: 20px;
     font-weight: 500;
 }
 
-.main .container .dynamic form .cardligne {
+.main .container .dynamic section form .cardligne {
     color: var(--rosaColor);
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-.main .container .dynamic form .nbrCardLabel {
+.main .container .dynamic section form .nbrCardLabel {
     font-size: 14px;
     font-weight: 400;
     color: var(--inputLabel);
 }
 
-.main .container .dynamic form .inputctr {
+.main .container .dynamic section form .inputctr {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.main .container .dynamic form .inputctr input {
+.main .container .dynamic section form .inputctr input {
     width: 100%;
     padding: 10px;
     border: 1px solid #EEEEEE;
@@ -173,26 +192,26 @@
     border-radius: 10px;
 }
 
-.main .container .dynamic form .inputctr img {
+.main .container .dynamic section form .inputctr img {
     width: 25px;
     height: 20px;
     position: absolute;
     right: 30px;
 }
 
-.main .container .dynamic form .cardInfo {
+.main .container .dynamic section form .cardInfo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
-.main .container .dynamic form .cardInfo .dateZone, 
-.main .container .dynamic form .cardInfo .cvcZone {
-    flex-grow: 50%;
+.main .container .dynamic section form .cardInfo .dateZone, 
+.main .container .dynamic section form .cardInfo .cvcZone {
+    width: 40%;
+    margin-right: 5%;
 }
 
-.main .container .dynamic form .cardInfo .dateZone .inpZone {
+.main .container .dynamic section form .cardInfo .dateZone .inpZone {
     display: flex;
     background: red;
     align-items: center;
@@ -204,13 +223,63 @@
     padding-left: 10px;
 }
 
-.main .container .dynamic form .cardInfo .dateZone .inpZone input {
+.main .container .dynamic section form .cardInfo .dateZone .inpZone input {
     width: 30px;
     border: none;
     outline: none;
     padding: 10px 0;
 }
 
-.main .container .dynamic form .cardInfo .dateZone .inpZone span {
+.main .container .dynamic section form .cardInfo .dateZone .inpZone span {
     margin-right: 10px;
+}
+
+.main .container .dynamic section form .cardInfo .cvcZone .cvcLabel,
+.main .container .dynamic section form .cardInfo .dateZone .dateLabel,
+.main .container .dynamic section form .tituZone .tituLabel {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--inputLabel);
+}
+
+.main .container .dynamic section form .cardInfo .cvcZone input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 15px 20px 45px 0px #E9E9E940;
+    outline: none;
+    border-radius: 10px;
+}
+
+.main .container .dynamic section form .tituZone {
+    margin-top: 20px;
+}
+
+.main .container .dynamic section form .tituZone input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 15px 20px 45px 0px #E9E9E940;
+    outline: none;
+    border-radius: 10px;
+}
+
+.main .container .dynamic section form .btnZone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .container .dynamic section form .btnZone #btn {
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px 50px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--rosaColor);
 }
