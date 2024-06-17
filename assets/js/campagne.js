@@ -1,5 +1,19 @@
 let links = document.querySelectorAll(".main .menu ul li.link");
+let linktopList = document.querySelectorAll(".main .container .menutop .linktop")
+let pageActionList = document.querySelectorAll(".main .container .dynamic .pageAction");
 
+
+links.forEach(element => {
+    element.addEventListener("mouseover", (e) => {
+        hoverEffet(element);
+    });
+});
+
+links.forEach(element => {
+    element.addEventListener("mouseout", (e) => {
+        hoverEffet(element, false);
+    });
+});
 
 let hoverEffet = (element, active = true) => {
     let baliseA = element.children[0];
@@ -19,17 +33,19 @@ let hoverEffet = (element, active = true) => {
             linklabel.style.color = "#484C52";
         }
     }
-    console.log()
 };
 
-links.forEach(element => {
-    element.addEventListener("mouseover", (e) => {
-        hoverEffet(element);
-    });
+linktopList.forEach(element => {
+    element.addEventListener("click", (e) => {
+        removeAllClass(linktopList, "active");
+        element.classList.add("active");
+        removeAllClass(pageActionList, "active");
+        pageActionList[element.dataset.pose].classList.add("active");
+    })
 });
 
-links.forEach(element => {
-    element.addEventListener("mouseout", (e) => {
-        hoverEffet(element, false);
+let removeAllClass = (htmlArray, classString) => {
+    htmlArray.forEach(element => {
+        element.classList.remove(classString);
     });
-});
+};
