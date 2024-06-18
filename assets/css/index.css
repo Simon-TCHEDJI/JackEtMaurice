@@ -10,7 +10,7 @@
 
 .main {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -62,6 +62,7 @@
     width: 80%;
     height: 51.86px;
     margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
