@@ -1,17 +1,17 @@
 {
-  "short_name": "Jack&Maurice",
   "name": "Jack Et Maurice",
-  "theme_color": "#eb5252",
-  "background_color": "rgb(245,245,248)",
+  "short_name": "Jack&Maurice",
+  "start_url": "/index.html",
   "display": "fullscreen",
-  "Scope": "/",
   "orientation": "portrait",
+  "scope": "/",
+  "background_color": "rgb(245,245,248)",
+  "theme_color": "#eb5252",
   "icons": [
     {
-      "src": "./assets/img/logo-accueil.png",
-      "type": "image/png",
-      "sizes": "48x48 72x72 96x96"
+      "src": "assets/img/logo-accueil.png",
+      "sizes": "48x48 72x72 96x96",
+      "type": "image/png"
     }
-  ],
-  "start_url": "./index.html"
+  ]
 }
