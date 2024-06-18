@@ -113,32 +113,33 @@
     left: 0%;
 }
 
-.strategie {
-    height: 100vh;
+.main .container .dynamic .compte {
+    height: calc(100vh - 120px);
     width: 100vw;
-    background: yellow;
+    top: 60px;
+    background: rgba(245, 245, 248, 1);
+    overflow-y: auto;
+
 }
 
-.main .container .dynamic section form .duretitle {
+.main .container .dynamic .compte form .duretitle {
     width: 100%;
-    margin-top: 73px;
-    margin-bottom: 20px;
+    margin: calc(100vh/20) 0;
     font-size: 14px;
     font-weight: 500;
     text-align: left;
     color: var(--rosaColor);
 }
 
-.main .container .dynamic section form .durelabel {
+.main .container .dynamic .compte form .durelabel {
     font-size: 14px;
     font-weight: 400;
     color: var(--inputLabel);
 }
 
-.main .container .dynamic section form select {
+.main .container .dynamic .compte form select {
     width: 100%;
-    height: 40px;
-    padding-left: 10px;
+    padding: 10px;
     border: 1px solid #EEEEEE;
     box-shadow: 15px 20px 45px 0px #E9E9E940;
     outline: none;
@@ -146,45 +147,45 @@
     background: #FFFFFF;
 }
 
-.main .container .dynamic section form .montligne {
+.main .container .dynamic .compte form .montligne {
     text-align: right;
-    margin: 20px 0;
+    margin: calc(100vh/20) 0;
 }
 
-.main .container .dynamic section form .montligne span:nth-child(1) {
+.main .container .dynamic .compte form .montligne span:nth-child(1) {
     color: var(--rosaColor);
     margin-right: 10px;
     font-size: 16px;
     font-weight: 400;
 }
 
-.main .container .dynamic section form .montligne span:nth-child(2) {
+.main .container .dynamic .compte form .montligne span:nth-child(2) {
     color: #000000;
     margin-right: 10px;
     font-size: 20px;
     font-weight: 500;
 }
 
-.main .container .dynamic section form .cardligne {
+.main .container .dynamic .compte form .cardligne {
     color: var(--rosaColor);
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: calc(100vh/20);
 }
 
-.main .container .dynamic section form .nbrCardLabel {
+.main .container .dynamic .compte form .nbrCardLabel {
     font-size: 14px;
     font-weight: 400;
     color: var(--inputLabel);
 }
 
-.main .container .dynamic section form .inputctr {
+.main .container .dynamic .compte form .inputctr {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.main .container .dynamic section form .inputctr input {
+.main .container .dynamic .compte form .inputctr input {
     width: 100%;
     padding: 10px;
     border: 1px solid #EEEEEE;
@@ -193,28 +194,27 @@
     border-radius: 10px;
 }
 
-.main .container .dynamic section form .inputctr img {
+.main .container .dynamic .compte form .inputctr img {
     width: 25px;
     height: 20px;
     position: absolute;
-    right: 30px;
+    right: calc(100vw/10);
 }
 
-.main .container .dynamic section form .cardInfo {
+.main .container .dynamic .compte form .cardInfo {
     display: flex;
     align-items: center;
     width: 100%;
 }
 
-.main .container .dynamic section form .cardInfo .dateZone, 
-.main .container .dynamic section form .cardInfo .cvcZone {
+.main .container .dynamic .compte form .cardInfo .dateZone, 
+.main .container .dynamic .compte form .cardInfo .cvcZone {
     width: 40%;
     margin-right: 5%;
 }
 
-.main .container .dynamic section form .cardInfo .dateZone .inpZone {
+.main .container .dynamic .compte form .cardInfo .dateZone .inpZone {
     display: flex;
-    background: red;
     align-items: center;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
@@ -224,26 +224,26 @@
     padding-left: 10px;
 }
 
-.main .container .dynamic section form .cardInfo .dateZone .inpZone input {
+.main .container .dynamic .compte form .cardInfo .dateZone .inpZone input {
     width: 30px;
     border: none;
     outline: none;
     padding: 10px 0;
 }
 
-.main .container .dynamic section form .cardInfo .dateZone .inpZone span {
+.main .container .dynamic .compte form .cardInfo .dateZone .inpZone span {
     margin-right: 10px;
 }
 
-.main .container .dynamic section form .cardInfo .cvcZone .cvcLabel,
-.main .container .dynamic section form .cardInfo .dateZone .dateLabel,
-.main .container .dynamic section form .tituZone .tituLabel {
+.main .container .dynamic .compte form .cardInfo .cvcZone .cvcLabel,
+.main .container .dynamic .compte form .cardInfo .dateZone .dateLabel,
+.main .container .dynamic .compte form .tituZone .tituLabel {
     font-size: 14px;
     font-weight: 400;
     color: var(--inputLabel);
 }
 
-.main .container .dynamic section form .cardInfo .cvcZone input {
+.main .container .dynamic .compte form .cardInfo .cvcZone input {
     width: 100%;
     padding: 10px;
     border: 1px solid #EEEEEE;
@@ -252,11 +252,11 @@
     border-radius: 10px;
 }
 
-.main .container .dynamic section form .tituZone {
-    margin-top: 20px;
+.main .container .dynamic .compte form .tituZone {
+    margin-top: calc(100vh/20);
 }
 
-.main .container .dynamic section form .tituZone input {
+.main .container .dynamic .compte form .tituZone input {
     width: 100%;
     padding: 10px;
     border: 1px solid #EEEEEE;
@@ -265,14 +265,14 @@
     border-radius: 10px;
 }
 
-.main .container .dynamic section form .btnZone {
+.main .container .dynamic .compte form .btnZone {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main .container .dynamic section form .btnZone #btn {
-    margin-top: 40px;
+.main .container .dynamic .compte form .btnZone #btn {
+    margin: calc(100vh/20) 0;
     font-size: 18px;
     font-weight: 600;
     text-align: center;
@@ -289,16 +289,12 @@
 /* Publication */
 
 .main .container .dynamic section.publication {
-    height: 100vh;
+    height: calc(100vh - 120px);
     width: 100vw;
     top: 60px;
     background: rgba(245, 245, 248, 1);
     overflow-y: auto;
-}
-
-.endLigne {
-    height: 130px;
-    width: 100%;
+    padding-bottom: 20px;
 }
 
 .main .container .dynamic .publication .pubZone {
@@ -368,4 +364,27 @@
     font-weight: 300;
     letter-spacing: 0.015em;
     color: #1B163F;
+}
+
+/* Stratégie */
+
+.main .container .dynamic section.strategie {
+    height: calc(100vh - 120px);
+    width: 100vw;
+    top: 60px;
+    background: yellow;
+    overflow-y: auto;
+}
+
+@media (min-height: 1000px) {
+    .main .container .dynamic .compte form .inputctr input,
+    .main .container .dynamic .compte form .cardInfo .dateZone .inpZone input,
+    .main .container .dynamic .compte form .cardInfo .cvcZone input,
+    .main .container .dynamic .compte form .tituZone input {
+        padding: 20px;
+    }
+
+    .main .container .dynamic .compte form select {
+        padding: 20px 10px;
+    }
 }
