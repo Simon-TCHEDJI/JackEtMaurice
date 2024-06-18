@@ -114,6 +114,8 @@
     left: 0%;
 }
 
+/**************************************************** Compte ****************************************************/
+
 .main .container .dynamic .compte {
     height: calc(100vh - 120px);
     width: 100vw;
@@ -286,7 +288,7 @@
 }
 
 
-/* Publication */
+/**************************************************** Publication ****************************************************/
 
 .main .container .dynamic section.publication {
     height: calc(100vh - 120px);
@@ -366,7 +368,7 @@
     color: #1B163F;
 }
 
-/* Stratégie */
+/**************************************************** Stratégie ****************************************************/
 
 .main .container .dynamic .strategie {
     height: calc(100vh - 120px);
