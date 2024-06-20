@@ -29,8 +29,11 @@ otpForm.addEventListener("click", (e) => {
         let pass = sessionStorage.pass;
         let code = sessionStorage.otp;
         if (code == otp) {
-            addCompteByDB(email, pass);
-            console.log([code, otp])
+            let user = addCompteByDB(email, pass);
+            sessionStorage.removeItem("email");
+            sessionStorage.removeItem("pass");
+            sessionStorage.removeItem("otp");
+            sessionStorage.user = JSON.stringify(user);
             changePage(allPage, pageChoix, "active");
         } else {
             popupActive("Code otp incorret");
@@ -38,4 +41,11 @@ otpForm.addEventListener("click", (e) => {
     } else {
         popupActive("Veuillez renseigner l'otp ou la redemander.");
     }
+});
+
+resendOtpBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    let otp = generateOtp(4);
+    sessionStorage.otp = otp;
+    console.log("Code OTP : " + otp);
 });
