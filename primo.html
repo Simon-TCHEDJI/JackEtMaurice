@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="main">
-        <section class="page active init">
+        <section class="page init">
             <div class="container">
                 <p class="h1">Liez un compte pour commencer</p>
                 <p class="content">Veuillez lier un compte LinkedIn pour commencer.</p>
@@ -50,11 +50,28 @@
                 <div class="btn">
                     <button class="btnOtp" type="button">Confirmer</button>
                 </div>
-                <div class="newCode"><span>Code non reçu, </span><a href="#">Renvoyer</a></div>
+                <div class="newCode"><span>Code non reçu, </span><span class="link">Renvoyer</span></div>
             </form>
         </section>
-        <section class="page choix">
-
+        <section class="page active choix">
+            <div class="container">
+                <p class="h1">Par quoi voulez vous commencer?</p>
+                <p class="content">Votre premier pas commence ici</p>
+                <div class="boxList">
+                    <a href="chat.html" class="box">
+                        <div class="icon"><img src="assets/img/JackAndMaurice.svg" alt="" srcset=""></div>
+                        <div class="text">Discuter avec J&M</div>
+                    </a>
+                    <a href="formation.html" class="box">
+                        <div class="icon"><img src="assets/img/formation-icon.svg" alt="" srcset=""></div>
+                        <div class="text">Suivre une formation</div>
+                    </a>
+                    <div class="box">
+                        <div class="icon"><img src="assets/img/straegie-icon.svg" alt="" srcset=""></div>
+                        <div class="text">Créer une stratégie</div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
     <div class="popcontainer">
@@ -64,9 +81,9 @@
             <div class="exit"><input type="button" value="Ok"></div>
         </div>
     </div>
-    <script src="assets/js/dbManager.js"></script>
     <script src="assets/js/popup.js"></script>
+    <script src="assets/js/dbManager.js"></script>
     <script src="assets/js/primo.js"></script>
-    <script src="assets/js/promoBackend.js"></script>
+    <script src="assets/js/primoBackend.js"></script>
 </body>
 </html>

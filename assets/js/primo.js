@@ -3,7 +3,9 @@ let allPage = document.querySelectorAll(".main .page");
 let addComptePage = document.querySelector(".main .page.addCompte");
 let pageOtp = document.querySelector(".main .page.setOtp");
 let pageChoix = document.querySelector(".main .page.choix");
-
+let resendOtpBtn = document.querySelector(".main .page.setOtp form .newCode .link");
+// localStorage.clear();
+// sessionStorage.clear();
 
 addCompteAction.addEventListener("click", (e) => {
     e.preventDefault();

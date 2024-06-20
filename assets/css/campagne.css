@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 .main {
@@ -72,7 +73,7 @@
     z-index: 100;
     margin-left: 5%;
     margin-top: 10px;
-    background: #FFFFFF80;
+    backdrop-filter: blur(5px);
 }
 
 .main .container .menutop .linktop {
@@ -117,11 +118,12 @@
 /**************************************************** Compte ****************************************************/
 
 .main .container .dynamic .compte {
-    height: calc(100vh - 120px);
+    height: calc(100vh - 70px);
     width: 100vw;
-    top: 60px;
+    top: 10px;
     overflow-y: auto;
-
+    padding-top: calc(100vh/20);
+    /* background: red; */
 }
 
 .main .container .dynamic .compte form .duretitle {
@@ -291,10 +293,11 @@
 /**************************************************** Publication ****************************************************/
 
 .main .container .dynamic section.publication {
-    height: calc(100vh - 120px);
+    height: calc(100vh - 70px);
     width: 100vw;
-    top: 60px;
+    top: 10px;
     overflow-y: auto;
+    padding-top: calc(100vh/20);
     padding-bottom: 20px;
 }
 
@@ -370,11 +373,12 @@
 
 /**************************************************** Stratégie ****************************************************/
 
-.main .container .dynamic .strategie {
-    height: calc(100vh - 120px);
+.main .container .dynamic .strategie {    
+    height: calc(100vh - 70px);
     width: 100vw;
-    top: 60px;
+    top: 10px;
     overflow-y: auto;
+    padding-top: calc(100vh/20);
     padding-bottom: 20px;
 }
 
