@@ -2,6 +2,7 @@
 
 :root {
     --bg-page: #F5F5F8;
+    --rosaColor: #FF5784;
 }
 
 *, ::after, ::before {
@@ -185,7 +186,7 @@
     width: 100%;
     padding: 10px;
     border-radius: 15px;
-    background: #FF5784;
+    background: var(--rosaColor);
     font-size: 18px;
     font-weight: 700;
     text-align: center;
@@ -265,7 +266,7 @@
     width: 100%;
     padding: 10px;
     border-radius: 15px;
-    background: #FF5784;
+    background: var(--rosaColor);
     font-size: 18px;
     font-weight: 700;
     text-align: center;
@@ -275,10 +276,88 @@
     margin-bottom: 5%;
 }
 
+.main .page.setOtp form .newCode {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.main .page.setOtp form .newCode .link {
+    color: var(--rosaColor);
+}
+
 /* Choix */
 
 .main .page.choix {
-    background: red;
+    /* background: red; */
+}
+
+.main .page.choix .container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .page.choix .container .h1 {
+    width: 80%;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.main .page.choix .container .content {
+    width: 80%;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.main .page.choix .container .boxList {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* background: red; */
+}
+
+.main .page.choix .container .boxList .box {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    background: #FFFFFF;
+    cursor: pointer;
+    /* color: #000000; */
+    text-decoration: none;
+}
+
+.main .page.choix .container .boxList .box .icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    margin-bottom: 10px;
+    background: #E2EDF8;
+}
+
+.main .page.choix .container .boxList .box .text {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #000000;
 }
 
 /* POPUP */

@@ -2,7 +2,7 @@ let db = localStorage.getItem("db");
 let com = document.querySelector(".main .btn a");
 
 if (db === null) {
-    db = {i: 0};
+    db = {};
     localStorage.db = JSON.stringify(db);
     console.log("create");
 } else {
@@ -14,5 +14,7 @@ com.addEventListener("click", (e) => {
     e.preventDefault()
     if (db.compte == undefined) {
         window.location.href = "/primo.html";
+    } else {
+        window.location.href = "/campagne.html";
     }
 });
