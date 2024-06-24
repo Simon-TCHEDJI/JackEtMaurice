@@ -1,7 +1,17 @@
 let links = document.querySelectorAll(".main .menu ul li.link");
 let linktopList = document.querySelectorAll(".main .container .menutop .linktop")
 let pageActionList = document.querySelectorAll(".main .container .dynamic .pageAction");
+let compteBoxs = document.querySelectorAll(".main .container .dynamic .inition .boxers .compteBox");
+let compteActionPage = document.querySelector(".main .container .dynamic .compteAction")
 
+
+compteBoxs.forEach(element => {
+    element.addEventListener("click", (e) => {
+        console.log(pageActionList);
+        removeAllClass(pageActionList, "active");
+        compteActionPage.classList.add("active");
+    });
+});
 
 links.forEach(element => {
     element.addEventListener("mouseover", (e) => {
@@ -15,7 +25,7 @@ links.forEach(element => {
     });
 });
 
-let hoverEffet = (element, active = true) => {
+function hoverEffet(element, active = true) {
     let baliseA = element.children[0];
     let linkicon = baliseA.children[0];
     let linklabel = baliseA.children[1];
