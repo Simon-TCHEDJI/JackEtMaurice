@@ -3,28 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/campagne.css">
-    <script src="./assets/js/campagne.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/linkedin.css">
+    <script src="./assets/js/linkedin.js" defer></script>
     <title>Jack et Maurice</title>
 </head>
 <body>
     <div class="main">
         <div class="menu">
             <ul>
-                <li class="link"><a href=""><div class="linkicon"><img src="./assets/img/accueil-icon.svg" alt="" srcset=""></div><div class="linklabel">Accueil</div></a></li>
-                <li class="link"><a href=""><div class="linkicon"><img src="./assets/img/formation-icon.svg" alt=""></div><div class="linklabel">Formation</div></a></li>
-                <li class="link"><a href=""><div class="linkicon"><img src="./assets/img/straegie-icon.svg" alt=""></div><div class="linklabel">Stratégie</div></a></li>
-                <li class="link active"><a href=""><div class="linkicon"><img src="./assets/img/linkedin-icon-active.svg" alt=""></div><div class="linklabel">Linkedin</div></a></li>
+                <li class="link"><a href="accueil.html"><div class="linkicon"><img src="./assets/img/accueil-icon.svg" alt="" srcset=""></div><div class="linklabel">Accueil</div></a></li>
+                <li class="link"><a href="formation.html"><div class="linkicon"><img src="./assets/img/formation-icon.svg" alt=""></div><div class="linklabel">Formation</div></a></li>
+                <li class="link"><a href="chat.html"><div class="linkicon"><img src="./assets/img/straegie-icon.svg" alt=""></div><div class="linklabel">Stratégie</div></a></li>
+                <li class="link active"><a href="linkedin.html"><div class="linkicon"><img src="./assets/img/linkedin-icon-active.svg" alt=""></div><div class="linklabel">Linkedin</div></a></li>
             </ul>
         </div>
         <div class="container">
             <div class="menutop">
                 <div class="linktop active" data-pose="0"><span>Mes Comptes</span></div>
-                <div class="linktop" data-pose="1"><span>Mes Publications</span></div>
-                <div class="linktop" data-pose="2"><span>Mes Stratégies</span></div>
+                <div class="linktop" data-pose="3"><span>Mes Publications</span></div>
+                <div class="linktop" data-pose="4"><span>Mes Stratégies</span></div>
             </div>
             <div class="dynamic">
-                <section class="pageAction active compte">
+                <section class="pageAction active inition">
+                    <div class="boxers">
+                        <div class="box compteBox">
+                            <div class="icon"><img src="assets/img/linkedin_compte.svg" alt="" srcset=""></div>
+                            <div class="title">Perso</div>
+                        </div>
+                        <div class="box compteBox">
+                            <div class="icon"><img src="assets/img/linkedin_compte.svg" alt="" srcset=""></div>
+                            <div class="title">Page Pro</div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><img src="assets/img/plus.svg" alt="" srcset=""></div>
+                            <div class="title">Ajouter</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pageAction compteAction">
+                    <div class="formsContainer">
+                        <div class="title">Compte LinkedIn</div>
+                        <form class="formScroll active" action="" method="post" id="formCompte">
+                            <div class="inp">
+                                <div class="label">Email</div>
+                                <input type="email" name="" id="" class="email">
+                            </div>
+                            <div class="inp">
+                                <div class="label">Mot de Passe</div>
+                                <div class="inpPass">
+                                    <input type="password" name="" id="">
+                                    <img src="assets/img/eye-bar.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="btnZone">
+                                <input type="submit" value="Envoyer">
+                            </div>
+                        </form>
+                        <form class="formScroll papOtp" action="" method="post" id="formCompteOtp">
+                            <div class="inp">
+                                <div class="label">Email</div>
+                                <input type="text" name="" id="" class="otp">
+                            </div>
+                            <div class="btnZone">
+                                <input type="submit" value="Valider">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="formStrategieZone">
+                        <form action="" method="post">
+                            <div class="title">Stratégie</div>
+                            <div class="inp">
+                                <div class="label">Type de Stratégie</div>
+                                <select name="" id="">
+                                    <option value="">Vente de fou</option>
+                                </select>
+                            </div>
+                            <div class="inp">
+                                <div class="label">Nbre de Post/Semaine</div>
+                                <input type="number" name="" id="">
+                            </div>
+                            <div class="title">Acheter des Posts</div>
+                            <div class="inp">
+                                <div class="label">Nbre de Posts Restants</div>
+                                <input type="number" name="" id="">
+                            </div>
+                            <div class="btnZone">
+                                <input type="submit" value="Acheter plus de posts">
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section class="pageAction compte">
                     <form action="" method="post" id="formAbonne">
                         <div class="duretitle">Durée Campagne</div>
                         <div class="durelabel">Durée de la campagne</div>

@@ -1,0 +1,19 @@
+{
+  "id": "/?source=pwa",
+  "name": "Jack Et Maurice",
+  "short_name": "Jack&Maurice",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "background_color": "rgba(245, 245, 248, 1)",
+  "theme_color": "white",
+  "icons": [
+    {
+      "src": "assets/img/logo-accueil.png",
+      "sizes": "48x48 72x72 96x96 144x144 192x192 512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}
