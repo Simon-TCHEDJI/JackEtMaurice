@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..800&family=Poppins:wght@100;200;400;600;800&display=swap');
+
+:root {
+    --rosaColor: #FF5784;
+    --inputLabel: #9796A1;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+
+.main .menu {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+
+.main .menu ul {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    list-style: none;
+    background: #FFFFFF;
+}
+
+.main .menu ul li {
+    width: calc(100vw/4);
+}
+
+.main .menu ul li {
+    height: 100%;
+}
+
+.main .menu ul li.active a .linklabel {
+    color: var(--rosaColor);
+}
+
+.main .menu ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 6px;
+    text-decoration: none;
+}
+
+.main .menu ul li a .linkicon img {
+    height: 25px;
+}
+
+
+
+.main .menu ul li a .linklabel {
+    font-size: 12px;
+    color: #53575D;
+}
+
+.main .jmctn {
+    width: calc(100vw - 100vw/10);
+    height: auto;
+    position: fixed;
+    top: 20px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    margin: 0 calc(100vw/20);
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px 0px 0px 0px;
+    background: #EBEBEB;
+}
+
+.main .jmctn .jmicon {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.main .jmctn .jmicon img {
+    width: 100%;
+    height: 100%;
+}
+
+.main .jmctn  .jmtext {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.main .dynamic {
+    width: 100%;
+    height: calc(100vh - 80px);
+    margin-top: 20px;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 70px calc(100vw/20) 0 calc(100vw/20);
+}
+
+.main .dynamic .boxList,
+.main .dynamic .boxList .day {
+    width: 100%;
+    height: auto;
+}
+
+.main .dynamic .boxList .day {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.main .dynamic .boxList .box {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.main .dynamic .boxList .box.user {
+    justify-content: flex-end;
+}
+
+.main .dynamic .boxList .box.ia {
+    justify-content: flex-start;
+}
+
+.main .dynamic .boxList .box .message {
+    max-width: 80%;
+    height: auto;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    }
+
+.main .dynamic .boxList .box.user .message {
+    border-radius: 10px 0 10px 10px;
+    text-align: right;
+    background: #FFE2EA;
+    margin-left: 5px;
+}
+
+.main .dynamic .boxList .box.ia .message {
+    border-radius: 0 10px 10px 10px;
+    text-align: left;
+    background: #EBEBEB;
+    margin-right: 5px;
+}
+
+.time {
+    font-size: 12px;
+    font-weight: 400;
+    color: #2323234D;
+}
+
+.main .dynamic .saisie {
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    left: 0;
+    bottom: 60px;
+    z-index: 50;
+    padding: 10px calc(100vw/20);
+    /* background: #F5F5F5B2; */
+    background: white;
+}
+
+.main .dynamic .saisie .inputZone {
+    width: 100%;
+    height: auto;
+}
+
+
+.main .dynamic .saisie .inputZone input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 100px;
+    outline: none;
+    border: 1px solid #23232305;
+    background: #2323230D;
+}
+
+.main .dynamic .saisie .inputZone .buttons {
+    position: absolute;
+    top: 20px;
+    right: calc(100vw/10);
+    display: flex;
+    gap: 10px;
+    width: auto;
+    height: 20px;
+}

@@ -7,12 +7,9 @@ compteForm.addEventListener("click", (e) => {
     let pass = document.getElementById("pass").value;
     if (pass != "" && email != "") {
         if (emailVerify(email)) {
-            sessionStorage.email = email;
-            sessionStorage.pass = pass;
-            let otp = generateOtp(4);
-            sessionStorage.otp = otp;
-            console.log("Code OTP : " + otp);
-            changePage(allPage, pageOtp, "active");
+            let user = addCompteByDB(email, pass);
+            sessionStorage.user = JSON.stringify(user);
+            changePage(allPage, pageChoix, "active");
         } else {
             popupActive("Adresse email invalide.");
         }
