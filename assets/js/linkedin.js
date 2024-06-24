@@ -2,8 +2,26 @@ let links = document.querySelectorAll(".main .menu ul li.link");
 let linktopList = document.querySelectorAll(".main .container .menutop .linktop")
 let pageActionList = document.querySelectorAll(".main .container .dynamic .pageAction");
 let compteBoxs = document.querySelectorAll(".main .container .dynamic .inition .boxers .compteBox");
-let compteActionPage = document.querySelector(".main .container .dynamic .compteAction")
+let compteActionPage = document.querySelector(".main .container .dynamic .compteAction");
+let formScroll = document.querySelectorAll(".main .container .dynamic .compteAction .formsContainer .formScroll");
+let compteFSBtn = document.querySelector(".main .container .dynamic .compteAction .formsContainer #formCompte .btnZone input");
+let compteFSOtpBtn = document.querySelector(".main .container .dynamic .compteAction .formsContainer #formCompteOtp .btnZone input");
+let formsContainer = document.querySelector(".main .container .dynamic .compteAction .formsContainer");
 
+
+compteFSBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    formsContainer.classList.toggle("act");
+    removeAllClass(formScroll, "active");
+    formScroll[1].classList.toggle("active");
+});
+
+compteFSOtpBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    formsContainer.classList.toggle("act");
+    removeAllClass(formScroll, "active");
+    formScroll[0].classList.toggle("active");
+});
 
 compteBoxs.forEach(element => {
     element.addEventListener("click", (e) => {

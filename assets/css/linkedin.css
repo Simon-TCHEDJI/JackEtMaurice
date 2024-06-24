@@ -26,13 +26,15 @@
     padding-top: calc(100vh/15);
     display: flex;
     flex-direction: column;
-    /* background: red; */
 }
 
 .main .container .dynamic .compteAction .formsContainer {
     width: 100%;
     height: 230px;
-    /* background: yellow; */
+}
+
+.main .container .dynamic .compteAction .formsContainer.act {
+    height: 150px;
 }
 
 .main .container .dynamic .compteAction .formsContainer .title {
@@ -43,14 +45,15 @@
     color: var(--rosaColor);
 }
 
-.main .container .dynamic .compteAction .formsContainer form.active {
+.main .container .dynamic .compteAction .formsContainer .formScroll.active {
     left: 5%;
 }
 
-.main .container .dynamic .compteAction .formsContainer form {
+.main .container .dynamic .compteAction .formsContainer .formScroll {
     width: calc(100vw - 100vw/10);
     position: absolute;
     left: -200vw;
+    transition: left .5s ease-in-out;
 }
 
 .main .container .dynamic .compteAction .formsContainer form .inp {
@@ -101,6 +104,70 @@
 
 .main .container .dynamic .compteAction .formStrategieZone {
     flex-grow: 1;
+    width: 100%;
+}
+
+.main .container .dynamic .compteAction .formStrategieZone form {
+    width: 100%;
+}
+
+.main .container .dynamic .compteAction .formStrategieZone form .title {
+    margin: 20px 0;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--rosaColor);
+}
+
+.main .container .dynamic .compteAction .formStrategieZone form .inp {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main .container .dynamic .compteAction .formStrategieZone form .inp .label {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--inputLabel);
+}
+
+.main .container .dynamic .compteAction .formStrategieZone form .inp select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 15px 20px 45px 0px #E9E9E940;
+    outline: none;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+.main .container .dynamic .compteAction .formStrategieZone form .inp input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 15px 20px 45px 0px #E9E9E940;
+    outline: none;
+    border-radius: 10px;
+}
+
+.main .container .dynamic .compteAction .formStrategieZone form .btnZone {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main .container .dynamic .compteAction .formStrategieZone form .btnZone input {
+    padding: 5px 25px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FF5784;
 }
 
 /**************************************************** init ****************************************************/
