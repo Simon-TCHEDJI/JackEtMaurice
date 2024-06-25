@@ -3,11 +3,19 @@ let linktopList = document.querySelectorAll(".main .container .menutop .linktop"
 let pageActionList = document.querySelectorAll(".main .container .dynamic .pageAction");
 let compteBoxs = document.querySelectorAll(".main .container .dynamic .inition .boxers .compteBox");
 let compteActionPage = document.querySelector(".main .container .dynamic .compteAction");
+let compte = document.querySelector(".main .container .dynamic .compte");
 let formScroll = document.querySelectorAll(".main .container .dynamic .compteAction .formsContainer .formScroll");
 let compteFSBtn = document.querySelector(".main .container .dynamic .compteAction .formsContainer #formCompte .btnZone input");
 let compteFSOtpBtn = document.querySelector(".main .container .dynamic .compteAction .formsContainer #formCompteOtp .btnZone input");
 let formsContainer = document.querySelector(".main .container .dynamic .compteAction .formsContainer");
+let formStrategieZoneBtn = document.querySelector(".main .container .dynamic .compteAction .formStrategieZone form .btnZone input");
 
+
+formStrategieZoneBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    removeAllClass(pageActionList, "active");
+    compte.classList.toggle("active")
+});
 
 compteFSBtn.addEventListener("click", (e) => {
     e.preventDefault();
@@ -72,7 +80,7 @@ linktopList.forEach(element => {
     })
 });
 
-let removeAllClass = (htmlArray, classString) => {
+function removeAllClass(htmlArray, classString) {
     htmlArray.forEach(element => {
         element.classList.remove(classString);
     });

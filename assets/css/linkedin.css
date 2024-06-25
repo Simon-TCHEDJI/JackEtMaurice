@@ -16,6 +16,18 @@
     left: 0%;
 }
 
+.main .container .dynamic .pageAction::-webkit-scrollbar {
+    width: 5px;
+}
+
+.main .container .dynamic .pageAction::-webkit-scrollbar-track {
+    background: var(--bg-main);
+}
+
+.main .container .dynamic .pageAction::-webkit-scrollbar-thumb {
+    background: var(--bg-main);
+}
+
 /**************************************************** compteAction ****************************************************/
 
 .main .container .dynamic .compteAction {
@@ -154,7 +166,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 .main .container .dynamic .compteAction .formStrategieZone form .btnZone input {
