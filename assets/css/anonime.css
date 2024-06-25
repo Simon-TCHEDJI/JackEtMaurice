@@ -1,0 +1,181 @@
+.main .container .dynamic {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.main .container .dynamic .pageAction {
+    padding: 0 5%;
+    position: absolute;
+    background: rgba(245, 245, 248, 1);
+    transition: left .3s ease-in-out ;
+}
+
+.main .container .dynamic .pageAction::-webkit-scrollbar {
+    width: 5px;
+}
+
+.main .container .dynamic .pageAction::-webkit-scrollbar-track {
+    background: var(--bg-main);
+}
+
+.main .container .dynamic .pageAction::-webkit-scrollbar-thumb {
+    background: var(--bg-main);
+}
+
+.main .container .dynamic section.publication {
+    height: calc(100vh - 70px);
+    width: 100vw;
+    top: 10px;
+    overflow-y: auto;
+    padding-top: calc(100vh/20);
+    padding-bottom: 20px;
+}
+
+.main .container .dynamic .publication .pubZone {
+    padding-top: 20px;
+}
+
+.main .container .dynamic .publication .pubZone .pubDate {
+    margin-bottom: 10px;
+    text-align: left;
+    color: #FF5784;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 8px;
+    box-shadow: 0px 3px 10px 0px #B5B3C11C;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box .boxIcon {
+    width: 84px;
+    height: 84px;
+    margin-right: 10px;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box .boxIcon img,
+.main .container .dynamic .publication .pubZone .boxList .box .plus img {
+    width: 100%;
+    height: 100%;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box .textCtr {
+    width: calc(100% - 118px);
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box .plus {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box .textCtr {
+    font-family: "Poppins", sans-serif;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box .textCtr .title span:nth-child(1) {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.015em;
+    color: #0C0A1C;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box .textCtr .title span:nth-child(2) {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+    color: #0C0A1C;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box .textCtr .content {
+    font-size: 9px;
+    font-weight: 300;
+    letter-spacing: 0.015em;
+    color: #1B163F;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .boxDep {
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 10px 0px #B5B3C11C;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .boxDep .title {
+    font-size: 14px;
+    letter-spacing: 0.015em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .boxDep .image {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .boxDep .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .btnFlex {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .btnFlex p {
+    letter-spacing: 0.015em;
+    font-size: 14px;
+    color: #798196;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .btnFlex button {
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .btnFlex button:nth-child(1) {
+    color: #FF5784;
+    background: rgb(255, 87, 132, 10%);
+}
+
+.main .container .dynamic .publication .pubZone .boxList .btnFlex button:nth-child(2) {
+    color: white;
+    background: #FF5784;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .btnZone {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .btnZone button {
+    width: 90%;
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    color: white;
+    background: #FF5784;
+}

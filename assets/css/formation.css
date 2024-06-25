@@ -107,6 +107,18 @@
     color: #FFFFFF;
 }
 
+.main .dynaic .container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.main .dynaic .container::-webkit-scrollbar-track {
+    background: var(--bg-main);
+}
+
+.main .dynaic .container::-webkit-scrollbar-thumb {
+    background: var(--bg-main);
+}
+
 .main .dynaic .container {
     width: calc(100vw - 100vw/20);
     height: calc(100vh - 190px);
@@ -173,6 +185,18 @@
     font-weight: 500;
     line-height: 18px;
     text-align: left;
+}
+
+.main .dynaic .sContainer::-webkit-scrollbar {
+    width: 5px;
+}
+
+.main .dynaic .sContainer::-webkit-scrollbar-track {
+    background: var(--bg-main);
+}
+
+.main .dynaic .sContainer::-webkit-scrollbar-thumb {
+    background: var(--bg-main);
 }
 
 .main .dynaic .page.sChapitre .sContainer {
