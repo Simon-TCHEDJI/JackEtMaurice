@@ -2,6 +2,7 @@
     width: 100%;
     height: calc(100vh - 60px);
     padding: 0 calc(100vw/20);
+    overflow-y: auto;
 }
 
 .dynamic .title {
