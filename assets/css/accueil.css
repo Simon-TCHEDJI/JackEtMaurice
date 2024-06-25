@@ -14,7 +14,163 @@
 .dynamic .topContainer {
     width: 100%;
     height: 155px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     border-radius: 10px;
     background: #FFFFFF;
     box-shadow: 5px 5px 10px 0px #D1D1D626;
+}
+
+.dynamic .topContainer .columnVal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dynamic .topContainer .columnVal .nbr {
+    height: auto;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    color: #FF5784;
+    padding: 0;
+    /* background: red; */
+}
+
+.dynamic .topContainer .columnVal .ligne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-20px);
+}
+
+.dynamic .topContainer .columnVal .ligne .pro,
+.dynamic .topContainer .columnVal .ligne .segond .content {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+}
+
+.dynamic .topContainer .columnVal .ligne .segond {
+    display: flex;
+}
+
+.dynamic .topContainer .lib {
+
+}
+
+.dynamic .topContainer .lib .ligne:nth-child(1) {
+    margin-top: 20px;
+}
+
+.dynamic .topContainer .lib .ligne {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dynamic .topContainer .lib .ligne .image {
+    width: 25px;
+    height: 25px;
+}
+
+.dynamic .topContainer .lib .ligne .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.dynamic .topContainer .lib .ligne .content {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+    color: #000000;
+}
+
+.dynamic .boxs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 20px;
+    margin: 20px 0;
+}
+
+.dynamic .boxs .box {
+    width: 160px;
+    height: 150px;
+    border-radius: 19px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 10px 0px #D1D1D626;
+}
+
+.dynamic .boxs .box .circleContainer {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dynamic .boxs .box .circleContainer .circleBox {
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+
+.dynamic .boxs .box .circleContainer .circleBox .circle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),;
+}
+
+.dynamic .boxs .box .circleContainer .circleBox .circle .inner {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+.dynamic .boxs .box .title {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #000000;
+}
+
+.dynamic .boxs .box .flexZone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dynamic .boxs .box .flexZone .image {
+    width: 40px;
+    height: 40px;
+}
+
+.dynamic .boxs .box .flexZone .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.dynamic .boxs .box .flexZone .nbr {
+    font-size: 50px;
+    font-weight: 500;
+    /* background: red; */
+}
+
+.dynamic .static {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.dynamic .static img {
+    width: 100%;
+    height: 100%;
 }
