@@ -10,22 +10,18 @@
 
 .main {
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
     background: url("../img/Frame bg.png");
-}
-
-.main .ctnlogo {
-    width: 100%;
-    height: auto;
+    overflow: hidden;
 }
 
 .main .logo {
-    width: calc(100vw - 60px);
-    height: calc(100vw - 60px);
+    width: 70vw;
+    height: 50vh;
     margin-top: 60px;
 }
 
@@ -83,4 +79,19 @@
     font-size: 15px;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
+}
+
+@media (max-height: 570px) {
+    .main .logo {
+        margin-top: 10px;
+    }
+
+    .main .title {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+
+    .main .ligne {
+        margin: 5px 0;
+    }
 }
