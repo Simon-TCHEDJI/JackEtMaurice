@@ -12,7 +12,7 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     background: url("../img/Frame bg.png");
@@ -20,8 +20,8 @@
 }
 
 .main .logo {
-    width: 70vw;
-    height: 50vh;
+    width: 60vw;
+    height: 30vh;
     margin-top: 30px;
 }
 
@@ -86,12 +86,12 @@
         margin-top: 10px;
     }
 
-    .main .title {
+    /* .main .title {
         margin-top: 5px;
         font-size: 20px;
     }
 
     .main .ligne {
         margin: 5px 0;
-    }
+    } */
 }
