@@ -1,8 +1,12 @@
+body {
+    overflow: hidden;
+}
+
 .dynamic {
     width: 100%;
     height: calc(100vh - 60px);
     padding: 0 calc(100vw/20);
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 .dynamic .title {
@@ -13,7 +17,7 @@
 
 .dynamic .topContainer {
     width: 100%;
-    height: 155px;
+    height: 25vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -53,6 +57,7 @@
 
 .dynamic .topContainer .columnVal .ligne .segond {
     display: flex;
+    align-items: center;
 }
 
 .dynamic .topContainer .lib {
@@ -66,7 +71,7 @@
 .dynamic .topContainer .lib .ligne {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .dynamic .topContainer .lib .ligne .image {
@@ -184,18 +189,36 @@
 
 .dynamic .static {
     width: calc(100vw - 100vw/10);
-    height: 200px;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    background: url("../img/Mask\ group.svg");
-    background-size: cover;
-    background-position:inherit;
     /* background: red; */
 }
 
 .dynamic .static img {
     width: 100% !important;
     height: 100% !important;
+}
+
+@media (max-height: 950px) {
+    .dynamic .static {
+        height: 40vh;
+        /* background: yellow; */
+    }
+    
+    @media (max-height: 820px) {
+        .dynamic .static {
+            height: 28vh;
+            /* background: blue; */
+        }
+    }
+
+    @media (max-height: 780px) {
+        .dynamic .static {
+            height: 25vh;
+            /* background: green; */
+        }
+    }
 }
