@@ -8,14 +8,18 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow: hidden;
+    background: url("../img/Frame bg.png");
+}
+
 .main {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url("../img/Frame bg.png");
     overflow: hidden;
 }
 
@@ -57,8 +61,7 @@
 .main .btn {
     width: 80%;
     height: 51.86px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
