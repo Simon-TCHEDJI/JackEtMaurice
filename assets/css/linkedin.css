@@ -549,6 +549,18 @@
     margin-bottom: 20px;
 }
 
+/*  */
+
+input:not(input[type="button"], input[type="submit"]),
+select {
+    transition: all .5s ease-in-out;
+}
+
+input:not(input[type="button"], input[type="submit"]):focus,
+select:focus {
+    transform: scale(1.05);
+}
+
 /* Responsivité */
 
 @media (min-height: 1000px) {
