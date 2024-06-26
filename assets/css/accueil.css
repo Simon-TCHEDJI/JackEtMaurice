@@ -183,12 +183,19 @@
 }
 
 .dynamic .static {
-    width: 100%;
-    height: 300px;
+    width: calc(100vw - 100vw/10);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
+    background: url("../img/Mask\ group.svg");
+    background-size: cover;
+    background-position:inherit;
+    /* background: red; */
 }
 
 .dynamic .static img {
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
 }
