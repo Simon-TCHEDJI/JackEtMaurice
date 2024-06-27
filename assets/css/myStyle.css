@@ -98,6 +98,11 @@
     /* background: red; */
 }
 
+#sending_message_holder {
+    margin-top: -60px;
+    /* background: yellow; */
+}
+
 .message.agent {
     background: #EBEBEB !important;
 }
