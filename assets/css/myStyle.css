@@ -93,7 +93,9 @@
 }
 
 #chatbox {
+    height: calc(100% - 60px) !important;
     margin-top: 60px;
+    /* background: red; */
 }
 
 .message.agent {
@@ -120,7 +122,8 @@
 }
 
 .ask_button.ok,
-#restart_chat_btn {
+#restart_chat_btn,
+#yes_btn {
     color: white !important;
     background: var(--rosaColor) !important;
 }
