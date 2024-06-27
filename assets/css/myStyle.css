@@ -93,7 +93,7 @@
 }
 
 #chatbox {
-    height: calc(100% - 160px) !important;
+    height: calc(100% - 170px) !important;
     margin-top: 60px;
     /* background: red; */
 }
@@ -101,7 +101,7 @@
 #sending_message_holder {
     width: 100%;
     position: absolute;
-    bottom: 60px;
+    bottom: 70px;
     /* background: yellow; */
 }
 
