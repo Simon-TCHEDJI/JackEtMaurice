@@ -93,7 +93,7 @@
 }
 
 #chatbox {
-    height: calc(100% - 60px) !important;
+    height: calc(100% - 120px) !important;
     margin-top: 60px;
     /* background: red; */
 }
