@@ -101,7 +101,7 @@
 #sending_message_holder {
     width: 100%;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     /* background: yellow; */
 }
 
