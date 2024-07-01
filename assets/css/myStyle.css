@@ -130,7 +130,13 @@
 
 .ask_button.ok,
 #restart_chat_btn,
-#yes_btn {
+#yes_btn,
+.send_form_btn {
     color: white !important;
     background: var(--rosaColor) !important;
+}
+
+#form_container form {
+    padding-top: 100px;
+    /* background: red; */
 }
