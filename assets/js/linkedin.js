@@ -9,7 +9,13 @@ let compteFSBtn = document.querySelector(".main .container .dynamic .compteActio
 let compteFSOtpBtn = document.querySelector(".main .container .dynamic .compteAction .formsContainer #formCompteOtp .btnZone input");
 let formsContainer = document.querySelector(".main .container .dynamic .compteAction .formsContainer");
 let formStrategieZoneBtn = document.querySelector(".main .container .dynamic .compteAction .formStrategieZone form .btnZone input");
+let editIcon = document.querySelector(".main .container .dynamic .strategie .stratZone .boxList .box .action .editIcon");
 
+
+editIcon.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.href = "/chat.html";
+});
 
 formStrategieZoneBtn.addEventListener("click", (e) => {
     e.preventDefault();
