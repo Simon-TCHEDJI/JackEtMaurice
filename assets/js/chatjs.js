@@ -990,9 +990,9 @@ let chat_variables = {
 }
 
 let isFirstStart = true;
-window.userUri = 'wss://pitts.co/ws';
-window.hostUrl = 'flowfusion.pitts.co';
-window.scenarioGuid = 'b6c00a13-4ef0-4e99-9d2d-b6eee4c8612d';
+window.userUri = 'wss://flowfusion.prosuite.technology/ws';
+window.hostUrl = 'flowfusion.prosuite.technology';
+window.scenarioGuid = '27ae2257-8ca6-479d-a302-f41ebb20a682';
 window.userEmail = useremail;
 window.userVariables = JSON.stringify(chat_variables);
 window.userProject = '';
