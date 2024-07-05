@@ -467,6 +467,65 @@
     color: #1B163F;
 }
 
+/**************************************************** StratégieD ****************************************************/
+
+.main .container .dynamic .strategieD {    
+    height: calc(100vh - 70px);
+    width: 100vw;
+    top: 10px;
+    overflow-y: auto;
+    padding-top: calc(100vh/20);
+    padding-bottom: 20px;
+}
+
+.main .container .dynamic .strategieD .pageTitle {
+    padding: 20px 0;
+    color: var(--rosaColor);
+    font-weight: 600;
+}
+
+.main .container .dynamic .strategieD .title {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.main .container .dynamic .strategieD .modDiv.title span,
+.main .container .dynamic .strategieD .modLi.titleLi span {
+    color: rgb(126, 12, 126);
+}
+
+.main .container .dynamic .strategieD .modDiv.toto {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.main .container .dynamic .strategieD .normal {
+    font-size: 12px;
+}
+
+.main .container .dynamic .strategieD .ligne {
+    margin: 20px 0;
+    width: 100%;
+    height: 2px;
+    background: black;
+}
+
+.main .container .dynamic .strategieD .silver,
+.main .container .dynamic .strategieD .indexSilver {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: rgb(160, 160, 160);
+}
+
+.main .container .dynamic .strategieD .list {
+    font-size: 12px;
+    margin: 0 calc(100vh/40) 40px calc(100vh/40);
+}
+
+.main .container .dynamic .strategieD .list li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
 /**************************************************** Stratégie ****************************************************/
 
 .main .container .dynamic .strategie {    
