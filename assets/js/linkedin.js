@@ -10,7 +10,15 @@ let compteFSOtpBtn = document.querySelector(".main .container .dynamic .compteAc
 let formsContainer = document.querySelector(".main .container .dynamic .compteAction .formsContainer");
 let formStrategieZoneBtn = document.querySelector(".main .container .dynamic .compteAction .formStrategieZone form .btnZone input");
 let editIcon = document.querySelector(".main .container .dynamic .strategie .stratZone .boxList .box .action .editIcon");
+let boxArray = document.querySelectorAll(".main .container .dynamic .strategie .stratZone .boxList .box");
 
+
+boxArray.forEach(element => {
+    element.addEventListener("click", (e) => {
+        removeAllClass(pageActionList, "active");
+        pageActionList[5].classList.add("active");
+    });
+});
 
 editIcon.addEventListener("click", (e) => {
     e.preventDefault();

@@ -972,6 +972,16 @@ document.addEventListener("DOMContentLoaded", function() {
         input.value = "";
     }
 });
+
+function api_callback(discussion_guid) {
+    const currentDiscussionId = localStorage.getItem("current_discussion_id");
+    if(currentDiscussionId === 'null' || currentDiscussionId === null)
+    {
+        console.log({discussion_guid})
+        // addDiscussion(discussion_guid);
+        localStorage.setItem("current_discussion_id",discussion_guid);
+    }
+}
 // ED216D6F-0106-8836-2468-351DF4E36926
 
 let userId = JSON.parse(localStorage.db).user[0].id;
@@ -990,12 +1000,18 @@ let chat_variables = {
 }
 
 let isFirstStart = true;
-window.userUri = 'wss://flowfusion.prosuite.technology/ws';
-window.hostUrl = 'flowfusion.prosuite.technology';
+window.userUri = 'wss://mobile.jacketmaurice.com/ws';
+window.hostUrl = 'mobile.jacketmaurice.com';
 window.scenarioGuid = '27ae2257-8ca6-479d-a302-f41ebb20a682';
+window.discussion_id    = localStorage.getItem("current_discussion_id")
 window.userEmail = useremail;
 window.userVariables = JSON.stringify(chat_variables);
-window.userProject = '';
-window.userAccessToken = '';
+window.userProject = null;
+window.userAccessToken = 'authtoken';
 
-start(window.userUri, window.hostUrl, window.scenarioGuid, window.userEmail, window.userVariables, window.userProject);
+start(window.userUri, window.hostUrl, window.scenarioGuid, window.userEmail, window.userVariables, window.userProject,window.discussion_id,api_callback);
+
+setTimeout(() => {
+    let userId = JSON.parse(localStorage.db).user[0].id;
+    addDiscussion(userId, localStorage.getItem("current_discussion_id"));
+},5000);

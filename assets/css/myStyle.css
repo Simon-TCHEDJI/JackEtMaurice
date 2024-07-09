@@ -116,14 +116,14 @@
 .send_btn {
     color: white !;
     background: var(--rosaColor) !important;
-    background-image: url("../img/Arrow\ Up.svg") !important;
+    background-image: url("../img/Arrow-Up.svg") !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
 }
 
 #restart_btn {
     background: white;
-    background-image: url("../img/Arrow\ Reload.svg") !important;
+    background-image: url("../img/Arrow-Reload.svg") !important;
     background-repeat: no-repeat;
     background-position: center;
 }
