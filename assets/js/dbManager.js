@@ -30,3 +30,22 @@ function addCompteByDB(email, mdp) {
     }
     return compte;
 };
+
+function addDiscussion(userId, discussionId) {
+    dataBase = JSON.parse(localStorage.db);
+    let newDiscussionId = {id: idGen(), userId: userId,discussionId: discussionId};
+    if (dataBase.discussion  === undefined) {
+        dataBase.discussion = [newDiscussionId];
+    } else {
+        let bool = false;
+        dataBase.discussion.forEach(element => {
+            if (element.discussionId == discussionId) {
+                bool = true;
+            }
+        });
+        if (bool == false) {
+            dataBase.discussion.push(newDiscussionId);
+        }
+    }
+    localStorage.db = JSON.stringify(dataBase);
+};
