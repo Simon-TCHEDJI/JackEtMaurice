@@ -110,6 +110,8 @@
 }
 
 .message.user {
+    height: auto !important;
+    text-overflow: ellipsis;
     background: #FFE2EA !important;
 }
 
