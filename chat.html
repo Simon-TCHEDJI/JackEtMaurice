@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/myStyle.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/chatEux.css">
+    <link rel="stylesheet" href="assets/css/destock.css">
     <!-- PWA -->
     <link rel="manifest" href="/manifest.json">
     <link rel="apple-touch-icon" href="assets/img/logo-accueil - manifest.png">
@@ -34,62 +35,68 @@
             </div>
             <div class="jmtext">Discutez avec Jack & Maurice</div>
         </div>
-            <main class=" conversation">
-                <div class="contaier"></div>
-                <div class="row">
-                    <div class="container conversation">
-                        <div id="new_chat" class="vdom_chat chat_holder" style="width: 500px; height: 1000px;" lang="en">
-                            <div class="top_panel">
-                    
-                                <div id="typing_message" class="typing_btn hide"><span class="dot"></span><span class="dot"></span><span
-                                        class="dot"></span></div>
+        <main class=" conversation">
+            <div class="contaier"></div>
+            <div class="row">
+                <div class="container conversation">
+                    <div id="new_chat" class="vdom_chat chat_holder" style="width: 500px; height: 1000px;" lang="en">
+                        <div class="top_panel">
+                
+                            <div id="typing_message" class="typing_btn hide"><span class="dot"></span><span class="dot"></span><span
+                                    class="dot"></span></div>
+                        </div>
+                        <div class="chat_wrapper">
+                            <div id="chatbox" class="chatbox"></div>
+                            <div id="iframe_container" class="iframe_container hide"></div>
+                            <div class="ask_buttons">
+                                <button type="button" id="ok_btn" class="ask_button ok hide" onclick="clickOKButton()">OK</button>
+                                <button type="button" id="cancel_btn" class="ask_button no hide"
+                                    onclick="clickCancelButton()">Cancel</button>
+                                <button type="button" id="yes_btn" class="ask_button yes hide" onclick="clickYesButton()">YES</button>
+                                <button type="button" id="no_btn" class="ask_button no hide" onclick="clickNoButton()">NO</button>
+                                <button type="button" id="restart_btn" class="ask_button restart hide"
+                                    onclick="showRestartDialog()"></button>
                             </div>
-                            <div class="chat_wrapper">
-                                <div id="chatbox" class="chatbox"></div>
-                                <div id="iframe_container" class="iframe_container hide"></div>
-                                <div class="ask_buttons">
-                                    <button type="button" id="ok_btn" class="ask_button ok hide" onclick="clickOKButton()">OK</button>
-                                    <button type="button" id="cancel_btn" class="ask_button no hide"
-                                        onclick="clickCancelButton()">Cancel</button>
-                                    <button type="button" id="yes_btn" class="ask_button yes hide" onclick="clickYesButton()">YES</button>
-                                    <button type="button" id="no_btn" class="ask_button no hide" onclick="clickNoButton()">NO</button>
-                                    <button type="button" id="restart_btn" class="ask_button restart hide"
-                                        onclick="showRestartDialog()"></button>
-                                </div>
-                            </div>
-                            <div id="sending_message_holder" class="sending_message_holder">
-                                <form class="sending_message">
-                                    <input type="text" id="message" required="" autocomplete="off" placeholder="Type something...">
-                                    <button type="button" id="restart_btn" class="restart_btn" onclick="showRestartDialog()"></button>
-                                    <button type="button" class="send_btn" onclick="sendMessage()"></button>
-                                </form>
-                            </div>
-                            <div id="form_container" class="form_container hide"></div>
-                            <div id="dialog_restart_chat" class="popup_blackout hide">
-                                <div class="popup_restart_chat">
-                                    <h2>Restart chat</h2>
-                                    <p>Start conversation again?</p>
-                                    <div class="win_buttons">
-                                        <button id="restart_chat_btn" class="send_form_btn" onclick="clickRestartButton()">Yes</button>
-                                        <button class="cancel_form_btn" onclick="hideRestartChatDialog()">Close</button>
-                                    </div>
+                        </div>
+                        <div id="sending_message_holder" class="sending_message_holder">
+                            <form class="sending_message">
+                                <input type="text" id="message" required="" autocomplete="off" placeholder="Type something...">
+                                <button type="button" id="restart_btn" class="restart_btn" onclick="showRestartDialog()"></button>
+                                <button type="button" class="send_btn" onclick="sendMessage()"></button>
+                            </form>
+                        </div>
+                        <div id="form_container" class="form_container hide"></div>
+                        <div id="dialog_restart_chat" class="popup_blackout hide">
+                            <div class="popup_restart_chat">
+                                <h2>Restart chat</h2>
+                                <p>Start conversation again?</p>
+                                <div class="win_buttons">
+                                    <button id="restart_chat_btn" class="send_form_btn" onclick="clickRestartButton()">Yes</button>
+                                    <button class="cancel_form_btn" onclick="hideRestartChatDialog()">Close</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                   </div>
-                    
+                </div>
+                </div>
                 
-                
-
-               
-               
-            </main>
             
+            
+
+            
+            
+        </main>
+    </div>
+    <div class="destock">
+        <div class="msg">
+            <p>Cette application n'est pas disponible en version destock merci de le lancer sur un mobile.</p>
+        </div>
+    </div>
 
               <!-- Linking to the JavaScript file -->
     <script src="assets/js/app.js"></script>
     <script src="assets/js/dbManager.js"></script>
     <script src="assets/js/chatjs.js"></script>
+    <script src="assets/js/destock.js"></script>
 </body>
 </html>

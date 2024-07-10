@@ -32,7 +32,7 @@ self.addEventListener("fetch", (event) => {
         var responseToCache = response.clone();
 
         caches.open(staticCacheName).then(function (cache) {
-          cache.put(event.request, responseToCache);
+          cache.push(event.request, responseToCache);
         });
 
         return response;
