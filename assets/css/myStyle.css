@@ -95,6 +95,7 @@
 #chatbox {
     height: calc(100% - 170px) !important;
     margin-top: 60px;
+    overflow-x: hidden;
     /* background: red; */
 }
 
