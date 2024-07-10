@@ -1,4 +1,4 @@
-let screenSize = 1000;
+let screenSize = 550;
 
 function destockRun() {
     let destock = document.querySelector(".destock");
