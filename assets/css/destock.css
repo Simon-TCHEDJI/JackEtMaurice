@@ -1,0 +1,33 @@
+.destock {
+    position: absolute;
+    top: 0;
+    left: 200vw;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.destock.active {
+    left: 0;
+    z-index: 10000;
+}
+
+.destock .msg {
+    width: 600px;
+    height: 300px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    border-radius: 20px;
+    border-top: 10px solid #FF5784;
+    border-bottom: 10px solid #FF5784;
+    /* background: red; */
+}
