@@ -93,7 +93,7 @@
 }
 
 .chat_wrapper {
-    height: calc(100vh - 60px) !important;
+    height: calc(100vh - 80px) !important;
     background: blue;
 }
 
@@ -107,7 +107,7 @@
 #sending_message_holder {
     width: 100%;
     position: absolute;
-    bottom: 15px;
+    bottom: 25px;
     margin-bottom: 10px;
     background: yellow;
 }
