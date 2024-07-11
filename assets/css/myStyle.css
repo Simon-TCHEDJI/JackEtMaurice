@@ -94,14 +94,14 @@
 
 .chat_wrapper {
     height: 100% !important;
-    background: blue;
+    /* background: blue; */
 }
 
 #chatbox {
     height: calc(100% - 160px) !important;
     margin-top: 60px;
     overflow-x: hidden;
-    background: red;
+    /* background: red; */
 }
 
 #sending_message_holder {
@@ -109,7 +109,7 @@
     position: absolute;
     bottom: 50px;
     margin-bottom: 10px;
-    background: yellow;
+    /* background: yellow; */
 }
 
 .message.agent {
@@ -154,7 +154,7 @@
 @media (max-height: 550px) {
     .chat_wrapper {
         height: calc(100vh - 100px) !important;
-        background: green !important;
+        /* background: green !important; */
     }
 
     #sending_message_holder {
