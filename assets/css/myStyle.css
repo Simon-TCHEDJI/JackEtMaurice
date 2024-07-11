@@ -93,7 +93,7 @@
 }
 
 .chat_wrapper {
-    height: calc(100vh - 80px) !important;
+    height: calc(100vh - 120px) !important;
     background: blue;
 }
 
