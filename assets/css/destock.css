@@ -1,7 +1,7 @@
 .destock {
     position: absolute;
     top: 0;
-    left: 200vw;
+    left: -200%;
     width: 100vw;
     height: 100vh;
     z-index: 0;
