@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..800&family=Poppins:wght@100;200;400;600;800&display=swap');
+
+:root {
+    --rosaColor: #FF5784;
+    --inputLabel: #9796A1;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(245, 245, 248, 1);
+    overflow: hidden;
+}
+
+.main .menu {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+
+.main .menu ul {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    list-style: none;
+    background: #FFFFFF;
+}
+
+.main .menu ul li {
+    width: calc(100vw/4);
+}
+
+.main .menu ul li {
+    height: 100%;
+}
+
+.main .menu ul li.active a .linklabel {
+    color: var(--rosaColor);
+}
+
+.main .menu ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 6px;
+    text-decoration: none;
+}
+
+.main .menu ul li a .linkicon img {
+    height: 25px;
+}
+
+.main .menu ul li a .linklabel {
+    font-size: 12px;
+    color: #53575D;
+}
+
+.main .container {
+    width: 100vw;
+    height: auto;
+}
+
+.main .container .menutop {
+    width: 90%;
+    height: auto;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    margin-left: 5%;
+    margin-top: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.main .container .menutop .linktop {
+    width: calc(100%/3);
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.main .container .menutop .linktop.active {
+    background: #FFFFFF;
+    color: var(--rosaColor);
+    border-radius: 10px;
+}
+
+.dynamic {
+    height: 50vh;
+    /* background: red; */
+}

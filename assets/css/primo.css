@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg-page: #F5F5F8;
+    --rosaColor: #FF5784;
+}
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.main, 
+.main .page {
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg-page);
+}
+
+.main .page {
+    position: absolute;
+    top: -200vh;
+    left: 0;
+    z-index: 0;
+    transition: top .5s ease-in-out;
+}
+
+.main .page.active {
+    z-index: 10;
+    top: 0;
+}
+
+.main .page.init,
+.main .page.addCompte,
+.main .page.setOtp,
+.main .page.choix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .page.init .container {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .page.init .container .h1 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.main .page.init .container .content {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.main .page.init .container .box {
+    width: 180px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.main .page.init .container .box .icon {
+    width: 63px;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    margin-bottom: 10px;
+    background: #E2EDF8;
+}
+
+.main .page.init .container .box .text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* addCompte */
+
+.main .page.addCompte,
+.main .page.setOtp {
+    flex-direction: column;
+}
+
+.main .page.addCompte .textBloc,
+.main .page.setOtp .textBloc {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.main .page.addCompte .textBloc .title,
+.main .page.setOtp .textBloc .title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+}
+
+.main .page.addCompte .textBloc .content,
+.main .page.setOtp .textBloc .content {
+    font-size: 16px;
+    font-weight: 400;
+    color: #383838;
+}
+
+.main .page.addCompte form,
+.main .page.setOtp form {
+    width: 90%;
+    padding: 5%;
+    border-radius: 16px;
+    background: #FFFFFF;
+}
+
+.main .page.addCompte form .inp,
+.main .page.setOtp form .inp {
+    /* width: 100%; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.main .page.addCompte form .inp label,
+.main .page.addCompte form .inpCheck label,
+.main .page.setOtp form .inp label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #9796A1;
+}
+
+.main .page.addCompte form .inp input,
+.main .page.addCompte form .inpCheck .input input,
+.main .page.setOtp form .inp input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px 0px 0px 0px;
+    border: 1px solid #EEEEEE
+}
+
+.main .page.addCompte form .inpCheck {
+    margin-bottom: 5%;
+}
+
+.main .page.addCompte form .inpCheck .input input {
+    padding-right: 16px;
+}
+
+.main .page.addCompte form .inpCheck .input img {
+    position: absolute;
+    transform: translate(calc(-100vw/11), 10px);
+}
+
+.main .page.addCompte form .btn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .page.addCompte form .btn button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    background: var(--rosaColor);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+}
+
+/* OTP */
+
+.main .page.setOtp {
+    flex-direction: column;
+}
+
+.main .page.setOtp .textBloc {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.main .page.setOtp .textBloc .title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+}
+
+.main .page.setOtp .textBloc .content {
+    font-size: 16px;
+    font-weight: 400;
+    color: #383838;
+}
+
+.main .page.setOtp form {
+    width: 90%;
+    padding: 5%;
+    border-radius: 16px;
+    background: #FFFFFF;
+}
+
+.main .page.setOtp form .inp {
+    /* width: 100%; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.main .page.setOtp form .inp label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #9796A1;
+}
+
+.main .page.setOtp form .inp input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px 0px 0px 0px;
+    border: 1px solid #EEEEEE
+}
+
+.main .page.setOtp form .btn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .page.setOtp form .btn button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    background: var(--rosaColor);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    margin-bottom: 5%;
+}
+
+.main .page.setOtp form .newCode {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.main .page.setOtp form .newCode .link {
+    color: var(--rosaColor);
+}
+
+/* Choix */
+
+.main .page.choix {
+    /* background: red; */
+}
+
+.main .page.choix .container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .page.choix .container .h1 {
+    width: 80%;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.main .page.choix .container .content {
+    width: 80%;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.main .page.choix .container .boxList {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* background: red; */
+}
+
+.main .page.choix .container .boxList .box {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    background: #FFFFFF;
+    cursor: pointer;
+    /* color: #000000; */
+    text-decoration: none;
+}
+
+.main .page.choix .container .boxList .box .icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    margin-bottom: 10px;
+    background: #E2EDF8;
+}
+
+.main .page.choix .container .boxList .box .text {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #000000;
+}
+
+/* POPUP */
+
+.popcontainer {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.popcontainer.active {
+    opacity: 1;
+    z-index: 100;
+}
+
+.popcontainer .popup {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    color: rgb(16, 5, 5);
+    border-radius: 10px;
+    background: white;
+    box-shadow: 2px 3px 1px 0px silver;
+}
+
+.popcontainer .popup .alert {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.popcontainer .popup .message {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.popcontainer .popup .exit {
+    display: flex;justify-content: flex-end;align-items: center;
+}
+
+.popcontainer .popup .exit input {
+    padding: 5px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Discutez avec Jack & Maurice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="assets/css/myStyle.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/chatEux.css">
+    <link rel="stylesheet" href="assets/css/destock.css">
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="assets/img/logo-accueil - manifest.png">
+    <meta name="apple-mobile-web-app-status-bar" content="white">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="white">
+</head>
+<body class="body-wrapper ">
+    
+    <div class="audit-wrapper page-animation">
+        <div class="menu">
+            <ul>
+                <li class="link"><a href="accueil.html"><div class="linkicon"><img src="./assets/img/accueil-icon.svg" alt="" srcset=""></div><div class="linklabel">Accueil</div></a></li>
+                <li class="link"><a href="formation.html"><div class="linkicon"><img src="./assets/img/formation-icon.svg" alt=""></div><div class="linklabel">Formation</div></a></li>
+                <li class="link active"><a href="chat.html"><div class="linkicon"><img src="./assets/img/straegie-icon-active.svg" alt=""></div><div class="linklabel">Stratégie</div></a></li>
+                <li class="link"><a href="linkedin.html"><div class="linkicon"><img src="./assets/img/linkedin-icon.svg" alt=""></div><div class="linklabel">Linkedin</div></a></li>
+            </ul>
+        </div>
+        <div class="jmctn">
+            <div class="jmicon">
+                <img src="assets/img/JackAndMaurice.svg" alt="" srcset="">
+            </div>
+            <div class="jmtext">Discutez avec Jack & Maurice</div>
+        </div>
+        <main class=" conversation">
+            <div class="contaier"></div>
+            <div class="row">
+                <div class="container conversation">
+                    <div id="new_chat" class="vdom_chat chat_holder" style="width: 500px; height: 1000px;" lang="en">
+                        <div class="top_panel">
+                
+                            <div id="typing_message" class="typing_btn hide"><span class="dot"></span><span class="dot"></span><span
+                                    class="dot"></span></div>
+                        </div>
+                        <div class="chat_wrapper">
+                            <div id="chatbox" class="chatbox"></div>
+                            <div id="iframe_container" class="iframe_container hide"></div>
+                            <div class="ask_buttons">
+                                <button type="button" id="ok_btn" class="ask_button ok hide" onclick="clickOKButton()">OK</button>
+                                <button type="button" id="cancel_btn" class="ask_button no hide"
+                                    onclick="clickCancelButton()">Cancel</button>
+                                <button type="button" id="yes_btn" class="ask_button yes hide" onclick="clickYesButton()">YES</button>
+                                <button type="button" id="no_btn" class="ask_button no hide" onclick="clickNoButton()">NO</button>
+                                <button type="button" id="restart_btn" class="ask_button restart hide"
+                                    onclick="showRestartDialog()"></button>
+                            </div>
+                        </div>
+                        <div id="sending_message_holder" class="sending_message_holder">
+                            <form class="sending_message">
+                                <input type="text" id="message" required="" autocomplete="off" placeholder="Type something...">
+                                <button type="button" id="restart_btn" class="restart_btn" onclick="showRestartDialog()"></button>
+                                <button type="button" class="send_btn" onclick="sendMessage()"></button>
+                            </form>
+                        </div>
+                        <div id="form_container" class="form_container hide"></div>
+                        <div id="dialog_restart_chat" class="popup_blackout hide">
+                            <div class="popup_restart_chat">
+                                <h2>Restart chat</h2>
+                                <p>Start conversation again?</p>
+                                <div class="win_buttons">
+                                    <button id="restart_chat_btn" class="send_form_btn" onclick="clickRestartButton()">Yes</button>
+                                    <button class="cancel_form_btn" onclick="hideRestartChatDialog()">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+            
+            
+
+            
+            
+        </main>
+    </div>
+    <div class="destock">
+        <div class="msg">
+            <p>Cette application n'est pas disponible en version destock merci de le lancer sur un mobile.</p>
+        </div>
+    </div>
+
+              <!-- Linking to the JavaScript file -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/dbManager.js"></script>
+    <script src="assets/js/chatjs.js"></script>
+    <script src="assets/js/destock.js"></script>
+</body>
+</html>

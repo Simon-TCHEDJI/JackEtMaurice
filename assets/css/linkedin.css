@@ -1,0 +1,636 @@
+.main .container .dynamic {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.main .container .dynamic .pageAction {
+    padding: 0 5%;
+    position: absolute;
+    left: -150vw;
+    background: rgba(245, 245, 248, 1);
+    transition: left .3s ease-in-out ;
+}
+
+.main .container .dynamic .pageAction.active {
+    position: absolute;
+    left: 0%;
+}
+
+.main .container .dynamic .pageAction::-webkit-scrollbar {
+    width: 5px;
+}
+
+.main .container .dynamic .pageAction::-webkit-scrollbar-track {
+    background: var(--bg-main);
+}
+
+.main .container .dynamic .pageAction::-webkit-scrollbar-thumb {
+    background: var(--bg-main);
+}
+
+/**************************************************** compteAction ****************************************************/
+
+.main .container .dynamic .compteAction {
+    height: calc(100vh - 70px);
+    width: 100vw;
+    top: 10px;
+    overflow-y: auto;
+    padding-top: calc(100vh/15);
+    display: flex;
+    flex-direction: column;
+}
+
+.main .container .dynamic .compteAction .formsContainer {
+    width: 100%;
+    height: 230px;
+}
+
+.main .container .dynamic .compteAction .formsContainer.act {
+    height: 150px;
+}
+
+.main .container .dynamic .compteAction .formsContainer .title {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--rosaColor);
+}
+
+.main .container .dynamic .compteAction .formsContainer .formScroll.active {
+    left: 5%;
+}
+
+.main .container .dynamic .compteAction .formsContainer .formScroll {
+    width: calc(100vw - 100vw/10);
+    position: absolute;
+    left: -200vw;
+    transition: left .5s ease-in-out;
+}
+
+.main .container .dynamic .compteAction .formsContainer form .inp {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main .container .dynamic .compteAction .formsContainer form .inp .label {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--inputLabel);
+}
+
+.main .container .dynamic .compteAction .formsContainer form .inp input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 15px 20px 45px 0px #E9E9E940;
+    outline: none;
+    border-radius: 10px;
+}
+
+.main .container .dynamic .compteAction .formsContainer form .inp .inpPass img {
+    position: absolute;
+    margin-top: 12px;
+    cursor: pointer;
+    transform: translateX(calc(-100vw/15));
+}
+
+.main .container .dynamic .compteAction .formsContainer form .btnZone {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main .container .dynamic .compteAction .formsContainer form .btnZone input {
+    padding: 5px 25px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FF5784;
+}
+
+.main .container .dynamic .compteAction .formStrategieZone {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.main .container .dynamic .compteAction .formStrategieZone form {
+    width: 100%;
+}
+
+.main .container .dynamic .compteAction .formStrategieZone form .title {
+    margin: 20px 0;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--rosaColor);
+}
+
+.main .container .dynamic .compteAction .formStrategieZone form .inp {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main .container .dynamic .compteAction .formStrategieZone form .inp .label {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--inputLabel);
+}
+
+.main .container .dynamic .compteAction .formStrategieZone form .inp select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 15px 20px 45px 0px #E9E9E940;
+    outline: none;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+.main .container .dynamic .compteAction .formStrategieZone form .inp input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 15px 20px 45px 0px #E9E9E940;
+    outline: none;
+    border-radius: 10px;
+}
+
+.main .container .dynamic .compteAction .formStrategieZone form .btnZone {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.main .container .dynamic .compteAction .formStrategieZone form .btnZone input {
+    padding: 5px 25px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FF5784;
+}
+
+/**************************************************** init ****************************************************/
+
+.main .container .dynamic .inition {
+    height: calc(100vh - 70px);
+    width: 100vw;
+    top: 10px;
+    overflow-y: auto;
+    padding-top: calc(100vh/15);
+}
+
+.boxers {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+.main .container .dynamic .inition .boxers .box {
+    width: 140px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    cursor: pointer;
+    background: #FFFFFF;
+}
+
+/**************************************************** Compte ****************************************************/
+
+.main .container .dynamic .compte {
+    height: calc(100vh - 70px);
+    width: 100vw;
+    top: 10px;
+    overflow-y: auto;
+    padding-top: calc(100vh/20);
+}
+
+.main .container .dynamic .compte form .duretitle {
+    width: 100%;
+    margin: calc(100vh/20) 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    color: var(--rosaColor);
+}
+
+.main .container .dynamic .compte form .durelabel {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--inputLabel);
+}
+
+.main .container .dynamic .compte form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 15px 20px 45px 0px #E9E9E940;
+    outline: none;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+.main .container .dynamic .compte form .montligne {
+    text-align: right;
+    margin: calc(100vh/20) 0;
+}
+
+.main .container .dynamic .compte form .montligne span:nth-child(1) {
+    color: var(--rosaColor);
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.main .container .dynamic .compte form .montligne span:nth-child(2) {
+    color: #000000;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.main .container .dynamic .compte form .cardligne {
+    color: var(--rosaColor);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: calc(100vh/20);
+}
+
+.main .container .dynamic .compte form .nbrCardLabel {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--inputLabel);
+}
+
+.main .container .dynamic .compte form .inputctr {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main .container .dynamic .compte form .inputctr input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 15px 20px 45px 0px #E9E9E940;
+    outline: none;
+    border-radius: 10px;
+}
+
+.main .container .dynamic .compte form .inputctr img {
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    right: calc(100vw/10);
+}
+
+.main .container .dynamic .compte form .cardInfo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.main .container .dynamic .compte form .cardInfo .dateZone, 
+.main .container .dynamic .compte form .cardInfo .cvcZone {
+    width: 40%;
+    margin-right: 5%;
+}
+
+.main .container .dynamic .compte form .cardInfo .dateZone .inpZone {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 15px 20px 45px 0px #E9E9E940;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.main .container .dynamic .compte form .cardInfo .dateZone .inpZone input {
+    width: 30px;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+}
+
+.main .container .dynamic .compte form .cardInfo .dateZone .inpZone span {
+    margin-right: 10px;
+}
+
+.main .container .dynamic .compte form .cardInfo .cvcZone .cvcLabel,
+.main .container .dynamic .compte form .cardInfo .dateZone .dateLabel,
+.main .container .dynamic .compte form .tituZone .tituLabel {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--inputLabel);
+}
+
+.main .container .dynamic .compte form .cardInfo .cvcZone input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 15px 20px 45px 0px #E9E9E940;
+    outline: none;
+    border-radius: 10px;
+}
+
+.main .container .dynamic .compte form .tituZone {
+    margin-top: calc(100vh/20);
+}
+
+.main .container .dynamic .compte form .tituZone input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 15px 20px 45px 0px #E9E9E940;
+    outline: none;
+    border-radius: 10px;
+}
+
+.main .container .dynamic .compte form .btnZone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .container .dynamic .compte form .btnZone #btn {
+    margin: calc(100vh/20) 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px 50px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--rosaColor);
+}
+
+
+/**************************************************** Publication ****************************************************/
+
+.main .container .dynamic section.publication {
+    height: calc(100vh - 70px);
+    width: 100vw;
+    top: 10px;
+    overflow-y: auto;
+    padding-top: calc(100vh/20);
+    padding-bottom: 20px;
+}
+
+.main .container .dynamic .publication .pubZone {
+    padding-top: 20px;
+}
+
+.main .container .dynamic .publication .pubZone .pubDate {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 8px;
+    box-shadow: 0px 3px 10px 0px #B5B3C11C;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box .boxIcon {
+    width: 84px;
+    height: 84px;
+    margin-right: 10px;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box .boxIcon img,
+.main .container .dynamic .publication .pubZone .boxList .box .plus img {
+    width: 100%;
+    height: 100%;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box .textCtr {
+    width: calc(100% - 118px);
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box .plus {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box .textCtr {
+    font-family: "Poppins", sans-serif;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box .textCtr .title span:nth-child(1) {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.015em;
+    color: #0C0A1C;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box .textCtr .title span:nth-child(2) {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+    color: #0C0A1C;
+}
+
+.main .container .dynamic .publication .pubZone .boxList .box .textCtr .content {
+    font-size: 9px;
+    font-weight: 300;
+    letter-spacing: 0.015em;
+    color: #1B163F;
+}
+
+/**************************************************** StratégieD ****************************************************/
+
+.main .container .dynamic .strategieD {    
+    height: calc(100vh - 70px);
+    width: 100vw;
+    top: 10px;
+    overflow-y: auto;
+    padding-top: calc(100vh/20);
+    padding-bottom: 20px;
+}
+
+.main .container .dynamic .strategieD .pageTitle {
+    padding: 20px 0;
+    color: var(--rosaColor);
+    font-weight: 600;
+}
+
+.main .container .dynamic .strategieD .title {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.main .container .dynamic .strategieD .modDiv.title span,
+.main .container .dynamic .strategieD .modLi.titleLi span {
+    color: rgb(126, 12, 126);
+}
+
+.main .container .dynamic .strategieD .modDiv.toto {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.main .container .dynamic .strategieD .normal {
+    font-size: 12px;
+}
+
+.main .container .dynamic .strategieD .ligne {
+    margin: 20px 0;
+    width: 100%;
+    height: 2px;
+    background: black;
+}
+
+.main .container .dynamic .strategieD .silver,
+.main .container .dynamic .strategieD .indexSilver {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: rgb(160, 160, 160);
+}
+
+.main .container .dynamic .strategieD .list {
+    font-size: 12px;
+    margin: 0 calc(100vh/40) 40px calc(100vh/40);
+}
+
+.main .container .dynamic .strategieD .list li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/**************************************************** Stratégie ****************************************************/
+
+.main .container .dynamic .strategie {    
+    height: calc(100vh - 70px);
+    width: 100vw;
+    top: 10px;
+    overflow-y: auto;
+    padding-top: calc(100vh/20);
+    padding-bottom: 20px;
+}
+
+.main .container .dynamic .strategie .stratZone {
+    padding-top: 20px;
+}
+
+.main .container .dynamic .strategie .stratZone .stratDate {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.main .container .dynamic .strategie .stratZone .boxList .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 8px;
+    box-shadow: 0px 3px 10px 0px #B5B3C11C;
+}
+
+.main .container .dynamic .strategie .stratZone .boxList .box:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.main .container .dynamic .strategie .stratZone .boxList .box .boxIcon {
+    width: 84px;
+    height: 84px;
+    margin-right: 10px;
+}
+
+.main .container .dynamic .strategie .stratZone .boxList .box .boxIcon img,
+.main .container .dynamic .strategie .stratZone .boxList .box .action div img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.main .container .dynamic .strategie .stratZone .boxList .box .textCtr {
+    width: calc(100% - 118px);
+    font-family: "Poppins", sans-serif;
+}
+
+.main .container .dynamic .strategie .stratZone .boxList .box .textCtr .title {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.015em;
+    color: #0C0A1C;
+}
+
+.main .container .dynamic .strategie .stratZone .boxList .box .textCtr .content {
+    font-size: 9px;
+    font-weight: 300;
+    letter-spacing: 0.015em;
+    color: #1B163F;
+}
+
+.main .container .dynamic .strategie .stratZone .boxList .box .action {
+    width: auto;
+    height: auto;
+}
+
+.main .container .dynamic .strategie .stratZone .boxList .box .action div {
+    width: 20px;
+    height: 20px;
+    /* background: rebeccapurple;
+    padding: 20px; */
+}
+
+.main .container .dynamic .strategie .stratZone .boxList .box .action .editIcon {
+    margin-bottom: 20px;
+}
+
+/*  */
+
+input:not(input[type="button"], input[type="submit"]),
+select {
+    transition: all .5s ease-in-out;
+}
+
+input:not(input[type="button"], input[type="submit"]):focus,
+select:focus {
+    transform: scale(1.05);
+}
+
+/* Responsivité */
+
+@media (min-height: 1000px) {
+    .main .container .dynamic .compte form .inputctr input,
+    .main .container .dynamic .compte form .cardInfo .dateZone .inpZone input,
+    .main .container .dynamic .compte form .cardInfo .cvcZone input,
+    .main .container .dynamic .compte form .tituZone input {
+        padding: 20px;
+    }
+
+    .main .container .dynamic .compte form select {
+        padding: 20px 10px;
+    }
+}

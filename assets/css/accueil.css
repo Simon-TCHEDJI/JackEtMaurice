@@ -1,0 +1,224 @@
+body {
+    overflow: hidden;
+}
+
+.dynamic {
+    width: 100%;
+    height: calc(100vh - 60px);
+    padding: 0 calc(100vw/20);
+    overflow-y: hidden;
+}
+
+.dynamic .title {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dynamic .topContainer {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 10px 0px #D1D1D626;
+}
+
+.dynamic .topContainer .columnVal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dynamic .topContainer .columnVal .nbr {
+    height: auto;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    color: #FF5784;
+    padding: 0;
+}
+
+.dynamic .topContainer .columnVal .ligne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-20px);
+}
+
+.dynamic .topContainer .columnVal .ligne .pro,
+.dynamic .topContainer .columnVal .ligne .segond .content {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+}
+
+.dynamic .topContainer .columnVal .ligne .segond {
+    display: flex;
+    align-items: center;
+}
+
+.dynamic .topContainer .lib {
+
+}
+
+.dynamic .topContainer .lib .ligne:nth-child(1) {
+    margin-top: 20px;
+}
+
+.dynamic .topContainer .lib .ligne {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.dynamic .topContainer .lib .ligne .image {
+    width: 25px;
+    height: 25px;
+}
+
+.dynamic .topContainer .lib .ligne .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.dynamic .topContainer .lib .ligne .content {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+    color: #000000;
+}
+
+.dynamic .boxs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 20px;
+    margin: 20px 0;
+}
+
+.dynamic .boxs .box {
+    width: 160px;
+    height: 150px;
+    border-radius: 19px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 10px 0px #D1D1D626;
+}
+
+.dynamic .boxs .box .circleContainer {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dynamic .boxs .box .circleContainer .circleBox {
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+
+.dynamic .boxs .box .circleContainer .circleBox .circle {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #FF5784;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.dynamic .boxs .box .circleContainer .circleBox .circle::before {
+    position: absolute;
+    content: "";
+    right: 16px;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid transparent;
+    border-top: 40px solid transparent;
+    border-right: 40px solid #FFE2EA;
+    border-radius: 50%;
+}
+
+.dynamic .boxs .box .circleContainer .circleBox .circle .inner {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 5.5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    background: white;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),inset -4px -4px 6px -1px rgba(255, 255, 255, 0.2),-0.5px -0.5px 0px rgba(255, 255, 255, 1),-0.5px -0.5px 0px rgba(0, 0, 0, 0.15),0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+.dynamic .boxs .box .title {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #000000;
+}
+
+.dynamic .boxs .box .flexZone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dynamic .boxs .box .flexZone .image {
+    width: 40px;
+    height: 40px;
+}
+
+.dynamic .boxs .box .flexZone .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.dynamic .boxs .box .flexZone .nbr {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.dynamic .static {
+    width: calc(100vw - 100vw/10);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    /* background: red; */
+}
+
+.dynamic .static img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+@media (max-height: 950px) {
+    .dynamic .static {
+        height: 40vh;
+        /* background: yellow; */
+    }
+    
+    @media (max-height: 820px) {
+        .dynamic .static {
+            height: 28vh;
+            /* background: blue; */
+        }
+    }
+
+    @media (max-height: 780px) {
+        .dynamic .static {
+            height: 25vh;
+            /* background: green; */
+        }
+    }
+}

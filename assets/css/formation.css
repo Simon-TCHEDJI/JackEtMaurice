@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..800&family=Poppins:wght@100;200;400;600;800&display=swap');
+
+:root {
+    --rosaColor: #FF5784;
+    --inputLabel: #9796A1;
+    --bg-main: rgba(245, 245, 248, 1);
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg-main);
+    overflow: hidden;
+}
+
+.main .menu {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+
+.main .menu ul {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    list-style: none;
+    background: #FFFFFF;
+}
+
+.main .menu ul li {
+    width: calc(100vw/4);
+}
+
+.main .menu ul li {
+    height: 100%;
+}
+
+.main .menu ul li.active a .linklabel {
+    color: var(--rosaColor);
+}
+
+.main .menu ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 6px;
+    text-decoration: none;
+}
+
+.main .menu ul li a .linkicon img {
+    height: 25px;
+}
+
+.main .menu ul li a .linklabel {
+    font-size: 12px;
+    color: #53575D;
+}
+
+.main .dynaic .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: calc(100vw - 100vw/20);
+    height: 150px;
+    margin: 0 calc(100vw/40);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 16px 58px 0px #1C103E40;
+    background: linear-gradient(90deg, #FF5784 0%, #8B3C8C 100%);
+}
+
+.main .dynaic .header .flexer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .dynaic .header .flexer .textZone .title,
+.main .dynaic .header .flexer .valZone .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.main .dynaic .header .flexer .textZone .content {
+    font-size: 12px;
+    font-weight: 400;
+    color: #FCFCFC;
+}
+
+.main .dynaic .header .flexer .valZone .content {
+    font-size: 50px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.main .dynaic .container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.main .dynaic .container::-webkit-scrollbar-track {
+    background: var(--bg-main);
+}
+
+.main .dynaic .container::-webkit-scrollbar-thumb {
+    background: var(--bg-main);
+}
+
+.main .dynaic .container {
+    width: calc(100vw - 100vw/20);
+    height: calc(100vh - 190px);
+    margin: 130px calc(100vw/40) 0 calc(100vw/40);
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+    overflow-y: auto;
+}
+
+.main .dynaic .container .box {
+    width: 160px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    cursor: pointer;
+    background: #FFFFFF;
+}
+
+.main .dynaic .page.active {
+    left: 0;
+    z-index: 30;
+}
+
+.main .dynaic .sChapitre {
+    position: absolute;
+    top: 0;
+    left: -200vw;
+    z-index: 0;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    padding: 40px calc(100vw/40);
+    transition: all .5s ease-in-out;
+    background: var(--bg-main);
+}
+
+.main .dynaic .sChapitre .headZone {
+    width: 100%;
+    height: auto;
+}
+
+.main .dynaic .sChapitre .headZone .icon {
+    max-width: 100px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main .dynaic .sChapitre .headZone .icon img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.main .dynaic .sChapitre .headZone .icon span{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+}
+
+.main .dynaic .sContainer::-webkit-scrollbar {
+    width: 5px;
+}
+
+.main .dynaic .sContainer::-webkit-scrollbar-track {
+    background: var(--bg-main);
+}
+
+.main .dynaic .sContainer::-webkit-scrollbar-thumb {
+    background: var(--bg-main);
+}
+
+.main .dynaic .page.sChapitre .sContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+    overflow-y: auto;
+    /* background: red; */
+
+}
+
+.main .dynaic .page.sChapitre .sContainer .box {
+    width: 160px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    cursor: pointer;
+    background: #FFFFFF;
+}
+
+.main .dynaic .sContent {
+    position: absolute;
+    top: 0;
+    left: -200vw;
+    z-index: 0;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    padding: 40px calc(100vw/40);
+    transition: all .5s ease-in-out;
+    background: var(--bg-main);
+}
+
+.main .dynaic .sContent .headZone {
+    width: 100%;
+    height: auto;
+}
+
+.main .dynaic .sContent .headZone .icon {
+    max-width: 150px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main .dynaic .sContent .headZone .icon img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.main .dynaic .sContent .headZone .icon span{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+}
+
+.main .dynaic .sContent .ctrSChapitre {
+    height: 100%;
+    overflow-y: auto;
+    /* background: red; */
+}
+
+.main .dynaic .sContent .ctrSChapitre .image {
+    width: 100%;
+    height: 160px;
+}
+
+.main .dynaic .sContent .ctrSChapitre .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.main .dynaic .sContent .ctrSChapitre .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    padding: 20px 0;
+}
+
+.main .dynaic .sContent .ctrSChapitre p {
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    color: #798196;
+}

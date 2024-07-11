@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/primo.css">
+    <link rel="stylesheet" href="assets/css/destock.css">
+    <title>Faite votre premier part sur Jack et Maurice</title>
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="assets/img/logo-accueil - manifest.png">
+    <meta name="apple-mobile-web-app-status-bar" content="white">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="white">
+</head>
+<body>
+    <div class="main">
+        <section class="page active init">
+            <div class="container">
+                <p class="h1">Liez un compte pour commencer</p>
+                <p class="content">Veuillez lier un compte LinkedIn pour commencer.</p>
+                <div class="box">
+                    <div class="icon"><img src="assets/img/plus.svg" alt="" srcset=""></div>
+                    <div class="text">Ajouter</div>
+                </div>
+            </div>
+        </section>
+        <section class="page addCompte">
+            <div class="textBloc">
+                <p class="title">Connecter votre compte</p>
+                <p class="content">Entrez les informations liées à votre compte LinkedIn</p>
+            </div>
+            <form action="" method="post" id="formBloc">
+                <div class="inp">
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="email">
+                </div>
+                <div class="inpCheck">
+                    <label for="pass">Mot de passe</label>
+                    <div class="input"><input type="password" name="" id="pass"><img src="assets/img/eye-bar.svg" alt="" srcset=""></div>
+                </div>
+                <div class="btn">
+                    <button class="btnLogin" type="button">Envoyer</button>
+                </div>
+            </form>
+        </section>
+        <section class="page setOtp">
+            <div class="textBloc">
+                <p class="title">Confirmer votre compte</p>
+                <p class="content">Un code OTP vient d’être envoyé à votre adresse mail. Veuillez confirmer le code</p>
+            </div>
+            <form action="" method="post" id="formOtp">
+                <div class="inp">
+                    <label for="otp">Code</label>
+                    <input type="text" name="" id="otp">
+                </div>
+                <div class="btn">
+                    <button class="btnOtp" type="button">Confirmer</button>
+                </div>
+                <div class="newCode"><span>Code non reçu, </span><span class="link">Renvoyer</span></div>
+            </form>
+        </section>
+        <section class="page choix">
+            <div class="container">
+                <p class="h1">Par quoi voulez vous commencer?</p>
+                <p class="content">Votre premier pas commence ici</p>
+                <div class="boxList">
+                    <a href="chat.html" class="box">
+                        <div class="icon"><img src="assets/img/JackAndMaurice.svg" alt="" srcset=""></div>
+                        <div class="text">Créer une stratégie</div>
+                    </a>
+                    <a href="formation.html" class="box">
+                        <div class="icon"><img src="assets/img/formation-icon.svg" alt="" srcset=""></div>
+                        <div class="text">Suivre une formation</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="popcontainer">
+        <div class="popup">
+            <div class="alert">Jack Et Maurice Alert</div>
+            <div class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="exit"><input type="button" value="Ok"></div>
+        </div>
+    </div>
+    <div class="destock">
+        <div class="msg">
+            <p>Cette application n'est pas disponible en version destock merci de le lancer sur un mobile.</p>
+        </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <script src="assets/js/dbManager.js"></script>
+    <script src="assets/js/primo.js"></script>
+    <script src="assets/js/primoBackend.js"></script>
+    <script src="assets/js/destock.js"></script>
+</body>
+</html>

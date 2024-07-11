@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/linkedin.css">
+    <link rel="stylesheet" href="./assets/css/destock.css">
+    <title>Espace Linkedin</title>
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="assets/img/logo-accueil - manifest.png">
+    <meta name="apple-mobile-web-app-status-bar" content="white">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="white">
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <ul>
+                <li class="link"><a href="accueil.html"><div class="linkicon"><img src="./assets/img/accueil-icon.svg" alt="" srcset=""></div><div class="linklabel">Accueil</div></a></li>
+                <li class="link"><a href="formation.html"><div class="linkicon"><img src="./assets/img/formation-icon.svg" alt=""></div><div class="linklabel">Formation</div></a></li>
+                <li class="link"><a href="chat.html"><div class="linkicon"><img src="./assets/img/straegie-icon.svg" alt=""></div><div class="linklabel">Stratégie</div></a></li>
+                <li class="link active"><a href="linkedin.html"><div class="linkicon"><img src="./assets/img/linkedin-icon-active.svg" alt=""></div><div class="linklabel">Linkedin</div></a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="menutop">
+                <div class="linktop active" data-pose="0"><span>Mes Comptes</span></div>
+                <div class="linktop" data-pose="3"><span>Mes Publications</span></div>
+                <div class="linktop" data-pose="4"><span>Mes Stratégies</span></div>
+            </div>
+            <div class="dynamic">
+                <section class="pageAction active inition">
+                    <div class="boxers">
+                        <div class="box compteBox">
+                            <div class="icon"><img src="assets/img/linkedin_compte.svg" alt="" srcset=""></div>
+                            <div class="title">Perso</div>
+                        </div>
+                        <div class="box compteBox">
+                            <div class="icon"><img src="assets/img/linkedin_compte.svg" alt="" srcset=""></div>
+                            <div class="title">Page Pro</div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><img src="assets/img/plus.svg" alt="" srcset=""></div>
+                            <div class="title">Ajouter</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pageAction compteAction">
+                    <div class="formsContainer">
+                        <div class="title">Compte LinkedIn</div>
+                        <form class="formScroll active" action="" method="post" id="formCompte">
+                            <div class="inp">
+                                <div class="label">Email</div>
+                                <input type="email" name="" id="" class="email">
+                            </div>
+                            <div class="inp">
+                                <div class="label">Mot de Passe</div>
+                                <div class="inpPass">
+                                    <input type="password" name="" id="">
+                                    <img src="assets/img/eye-bar.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="btnZone">
+                                <input type="submit" value="Envoyer">
+                            </div>
+                        </form>
+                        <form class="formScroll papOtp" action="" method="post" id="formCompteOtp">
+                            <div class="inp">
+                                <div class="label">Email</div>
+                                <input type="text" name="" id="" class="otp">
+                            </div>
+                            <div class="btnZone">
+                                <input type="submit" value="Valider">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="formStrategieZone">
+                        <form action="" method="post">
+                            <div class="title">Stratégie</div>
+                            <div class="inp">
+                                <div class="label">Type de Stratégie</div>
+                                <select name="" id="">
+                                    <option value="">Vente de fou</option>
+                                </select>
+                            </div>
+                            <div class="inp">
+                                <div class="label">Nbre de Post/Semaine</div>
+                                <input type="number" name="" id="">
+                            </div>
+                            <div class="title">Acheter des Posts</div>
+                            <div class="inp">
+                                <div class="label">Nbre de Posts Restants</div>
+                                <input type="number" name="" id="">
+                            </div>
+                            <div class="btnZone">
+                                <input type="submit" value="Acheter plus de posts">
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section class="pageAction compte">
+                    <form action="" method="post" id="formAbonne">
+                        <div class="duretitle">Durée Campagne</div>
+                        <div class="durelabel">Durée de la campagne</div>
+                        <select name="" id="">
+                            <option value="">20 semaines</option>
+                        </select>
+                        <div class="montligne"><span class="title">Total:</span><span class="montant">..........$</spa00n></div>
+                        <div class="cardligne">Info carte</div>
+                        <div class="nbrCardLabel">N° de la carte</div>
+                        <div class="inputctr">
+                            <input type="text" name="" id=""><img src="./assets/img/free-visa-card-532753.webp" alt="" srcset="">
+                        </div>
+                        <div class="cardInfo">
+                            <div class="dateZone">
+                                <div class="dateLabel">Date d’expiration</div>
+                                <div class="inpZone">
+                                    <input type="text" name="" id="" placeholder="MM">
+                                    <span>/</span>
+                                    <input type="text" name="" id="" placeholder="AA">
+                                </div>
+                            </div>
+                            <div class="cvcZone">
+                                <div class="cvcLabel">CVC</div>
+                                <input type="text" name="" id="">
+                            </div>
+                        </div>
+                        <div class="tituZone">
+                            <div class="tituLabel">Titulaire de la carte</div>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="btnZone">
+                            <button type="button" id="btn">S'abonner</button>
+                        </div>
+                    </form>
+                </section>
+                <section class="pageAction publication">
+                    <div class="pubZone">
+                        <div class="pubDate">Aujourd’hui</div>
+                        <div class="boxList">
+                            <div class="box">
+                                <div class="boxIcon"><img src="./assets/img/AE Animation.svg" alt="" srcset=""></div>
+                                <div class="textCtr">
+                                    <div class="title"><span>Campagne:</span> <span>Vente de Fou</span></div>
+                                    <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+                                </div>
+                                <div class="plus"><img src="./assets/img/Arrow - Right.svg" alt="" srcset=""></div>
+                            </div>
+                            <div class="box">
+                                <div class="boxIcon"><img src="./assets/img/AE Animation.svg" alt="" srcset=""></div>
+                                <div class="textCtr">
+                                    <div class="title"><span>Campagne:</span> <span>Vente de Fou</span></div>
+                                    <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+                                </div>
+                                <div class="plus"><img src="./assets/img/Arrow - Right.svg" alt="" srcset=""></div>
+                            </div>
+                            <div class="box">
+                                <div class="boxIcon"><img src="./assets/img/AE Animation.svg" alt="" srcset=""></div>
+                                <div class="textCtr">
+                                    <div class="title"><span>Campagne:</span> <span>Vente de Fou</span></div>
+                                    <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+                                </div>
+                                <div class="plus"><img src="./assets/img/Arrow - Right.svg" alt="" srcset=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pubZone">
+                        <div class="pubDate">12/12/2024</div>
+                        <div class="boxList">
+                            <div class="box">
+                                <div class="boxIcon"><img src="./assets/img/AE Animation.svg" alt="" srcset=""></div>
+                                <div class="textCtr">
+                                    <div class="title"><span>Campagne:</span> <span>Vente de Fou</span></div>
+                                    <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+                                </div>
+                                <div class="plus"><img src="./assets/img/Arrow - Right.svg" alt="" srcset=""></div>
+                            </div>
+                            <div class="box">
+                                <div class="boxIcon"><img src="./assets/img/AE Animation.svg" alt="" srcset=""></div>
+                                <div class="textCtr">
+                                    <div class="title"><span>Campagne:</span> <span>Vente de Fou</span></div>
+                                    <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+                                </div>
+                                <div class="plus"><img src="./assets/img/Arrow - Right.svg" alt="" srcset=""></div>
+                            </div>
+                            <div class="box">
+                                <div class="boxIcon"><img src="./assets/img/AE Animation.svg" alt="" srcset=""></div>
+                                <div class="textCtr">
+                                    <div class="title"><span>Campagne:</span> <span>Vente de Fou</span></div>
+                                    <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+                                </div>
+                                <div class="plus"><img src="./assets/img/Arrow - Right.svg" alt="" srcset=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pageAction strategie">
+                    <div class="stratZone">
+                        <div class="stratDate">Aujourd’hui</div>
+                        <div class="boxList">
+                            <div class="box">
+                                <div class="boxIcon"><img src="./assets/img/AE Animation strategie.svg" alt="" srcset=""></div>
+                                <div class="textCtr">
+                                    <div class="title">Vente de Fou</div>
+                                    <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</div>
+                                </div>
+                                <div class="action">
+                                    <div class="editIcon"><img src="./assets/img/customize-edit.svg" alt="" srcset=""></div>
+                                    <div class="downloadIcon"><img src="./assets/img/cloud-download-alt.svg" alt="" srcset=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pageAction strategieD">
+                    <div class="pageTitle">Jack & Maurice AI</div>
+                    <div class="modDiv title brief">Brief Créatif pour Générer des Posts LinkedIn pour <span>TaxEase</span></div>
+                    <div class="modDiv title client">Client : <span>TaxEase</span></div>
+                    <div class="modDiv normal">Objectif Principal : <span>Vendre 1000 licences d’utilisation de la solution SaaS d’automatisation des déclarations de TVA</span></div>
+                    <div class="ligne"></div>
+                    <div class="title">Stratégie de Communication sur LinkedIn</div>
+                    <div class="silver">Objectifs :</div>
+                    <ul class="list objectif">
+                        <li class="modLi titleLi">Positionner <span>TaxEase</span> comme expert en automatisation fiscale.</li>
+                        <li>Générer des leads qualifiés.</li>
+                        <li>Convertir les leads en clients.</li>
+                        <li>Augmenter la notoriété de la marque.</li>
+                    </ul>
+                    <div class="silver">Fréquence de Publication :</div>
+                    <ul class="list frequence">
+                        <li>2 à 3 fois par semaine.</li>
+                    </ul>
+                    <div class="title">Buyer Personas</div>
+                    <div class="indexSilver">1. Responsable Financier</div>
+                    <ul class="list responsableF">
+                        <li class="modLi">Âge : <span>35-50 ans</span></li>
+                        <li class="modLi">Localisation : <span>Paris et grandes métropoles.</span></li>
+                        <li class="modLi">Profession : <span>Responsable Financier ou Directeur Comptable.</span></li>
+                        <li class="modLi">Intérêts : <span>Simplification des processus fiscaux, conformité réglementaire, gain de temps</span></li>
+                    </ul>
+                    <div class="indexSilver">2. Comptable Senior</div>
+                    <ul class="list comptableS">
+                        <li class="modLi">Âge : <span>30-45 ans</span></li>
+                        <li class="modLi">Localisation : <span>France.</span></li>
+                        <li class="modLi">Profession : <span>Comptable Senior.</span></li>
+                        <li class="modLi">Intérêts : <span>Précision des déclarations, réduction des erreurs humaines, automatisation des tâches répétitives</span></li>
+                    </ul>
+                    <div class="title">Contenu à Créer</div>
+                    <div class="silver">Formats :</div>
+                    <ul class="list contenuAC">
+                        <li>Articles</li>
+                        <li>Infographies</li>
+                        <li>Témoignages clients</li>
+                        <li>Témoignages clients</li>
+                    </ul>
+                    <div class="silver">Messages Clés :</div>
+                    <ol class="list messagesC">
+                        <li>"Automatisez vos déclarations de TVA et gagnez du temps pour des tâches à plus forte valeur ajoutée."</li>
+                        <li class="modLi titleLi">"Réduisez les erreurs humaines et assurez-vous de la conformité fiscale avec <span>TaxEase</span>."</li>
+                        <li class="modLi titleLi">"Découvrez comment <span>TaxEase</span> peut simplifier votre gestion de TVA."</li>
+                        <li class="modLi titleLi">"Essayez <span>TaxEase</span> gratuitement pendant 30 jours et voyez par vous-même la différence."</li>
+                        <li>"Prenez rendez-vous pour une démonstration personnalisée."</li>
+                        <li class="modLi titleLi">"Vous passez trop de temps sur les déclarations de TVA ? Automatisez-les avec <span>TaxEase</span> et gagnez du temps."</li>
+                        <li class="modLi titleLi">"Inquiet des erreurs dans vos déclarations ? <span>TaxEase</span> réduit les erreurs humaines et assure la conformité fiscale."</li>
+                    </ol>
+                    <div class="title">Propositions de Publications</div>
+                    <div class="silver">Nombre de Posts :</div>
+                    <ul class="list nombreDP">
+                        <li class="modLi">Articles : <span>2 par mois</span></li>
+                        <li class="modLi">Infographies : <span>2 par mois</span></li>
+                        <li class="modLi">Témoignages clients : <span>2 par mois</span></li>
+                        <li class="modLi">Vidéos courtes : <span>2 par mois</span></li>
+                    </ul>
+                    <div class="modDiv toto">Total Mensuel : <span>8 posts par mois</span></div>
+                    <div class="silver">Buyer Persona :</div>
+                    <ul class="list buyerP">
+                        <li>Responsable Financier</li>
+                        <li>Comptable Senior</li>
+                    </ul>
+                    <div class="modDiv"></div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="destock">
+        <div class="msg">
+            <p>Cette application n'est pas disponible en version destock merci de le lancer sur un mobile.</p>
+        </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/linkedin.js"></script>
+    <script src="./assets/js/destock.js"></script>
+</body>
+</html>
