@@ -154,6 +154,7 @@
 @media (max-width: 550px) {
     .chat_wrapper {
         height: calc(100vh - 100px) !important;
+        background: green !important;
     }
 
     #sending_message_holder {
