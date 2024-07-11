@@ -92,8 +92,13 @@
     text-align: left;
 }
 
+.chat_wrapper {
+    height: calc(100vh - 60px) !important;
+    /* background: blue; */
+}
+
 #chatbox {
-    height: calc(100% - 170px) !important;
+    height: calc(100% - 130px) !important;
     margin-top: 60px;
     overflow-x: hidden;
     /* background: red; */
@@ -102,7 +107,8 @@
 #sending_message_holder {
     width: 100%;
     position: absolute;
-    bottom: 70px;
+    bottom: 15px;
+    margin-bottom: 10px;
     /* background: yellow; */
 }
 
@@ -143,4 +149,14 @@
 #form_container form {
     padding-top: 100px;
     /* background: red; */
+}
+
+@media (max-width: 550px) {
+    .chat_wrapper {
+        height: calc(100vh - 100px) !important;
+    }
+
+    #sending_message_holder {
+        bottom: 25px;
+    }
 }
