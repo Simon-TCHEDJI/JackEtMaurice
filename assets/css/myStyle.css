@@ -113,7 +113,7 @@
 .message.user {
     height: auto !important;
     text-overflow: ellipsis;
-    text-align: right;
+    /* text-align: right; */
     background: #FFE2EA !important;
 }
 
