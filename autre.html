@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .btn {
+            width: 80%;
+            height: 51.86px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+        }
+
+        .btn a.disabled {
+            background: silver;
+        }
+
+        .btn a {
+            width: 100%;
+            height: 51.86px;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            font-family: "Poppins", sans-serif;
+            background: rgba(255, 87, 132, 1);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="OK" disabled>
+    <div class="btn"><a href="accueil.html"class="disabled">Commencez Maintenant!</a></div>
+    <script>
+        let btn = document.querySelector(".btn a");
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.currentTarget.classList
+        });
+    </script>
+</body>
+</html>

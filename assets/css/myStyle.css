@@ -8,117 +8,144 @@
 *,
 ::before,
 ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    font-family: "Poppins", sans-serif !important;
 }
 
 .menu {
-    position: fixed;
-    bottom: 0;
-    z-index: 100;
+    position: fixed !important;
+    bottom: 0 !important;
+    z-index: 100 !important;
 }
 
 .menu ul {
-    width: 100vw;
-    height: 60px;
-    display: flex;
-    list-style: none;
-    background: #FFFFFF;
+    width: 100vw !important;
+    height: 60px !important;
+    display: flex !important;
+    list-style: none !important;
+    background: #FFFFFF !important;
 }
 
 .menu ul li {
-    width: calc(100vw/4);
+    width: calc(100vw/4) !important;
 }
 
 .menu ul li {
-    height: 100%;
+    height: 100% !important;
 }
 
 .menu ul li.active a .linklabel {
-    color: var(--rosaColor);
+    color: var(--rosaColor) !important;
 }
 
 .menu ul li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 6px;
-    text-decoration: none;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    padding-top: 6px !important;
+    text-decoration: none !important;
 }
 
 .menu ul li a .linkicon img {
-    height: 25px;
+    height: 25px !important;
 }
 
 
 
 .menu ul li a .linklabel {
-    font-size: 12px;
-    color: #53575D;
+    font-size: 12px !important;
+    color: #53575D !important;
 }
 
 .jmctn {
-    width: calc(100vw - 100vw/10);
-    height: auto;
-    position: fixed;
-    top: 20px;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    margin: 0 calc(100vw/20);
-    padding: 10px;
-    border-radius: 15px;
-    border: 1px 0px 0px 0px;
-    background: #EBEBEB;
+    width: calc(100vw - 100vw/10) !important;
+    height: auto !important;
+    position: fixed !important;
+    top: 20px !important;
+    z-index: 100 !important;
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 calc(100vw/20) !important;
+    padding: 10px !important;
+    border-radius: 15px !important;
+    border: 1px 0px 0px 0px !important;
+    background: #EBEBEB !important;
 }
 
 .jmctn .jmicon {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
+    width: 50px !important;
+    height: 50px !important;
+    margin-right: 20px !important;
 }
 
 .jmctn .jmicon img {
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .jmctn  .jmtext {
-    font-size: 16px;
-    font-weight: 400;
-    text-align: left;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    text-align: left !important;
+}
+
+.chat_wrapper {
+    height: 100% !important;
+    overflow: hidden !important;
+    /* background: blue !important; */
 }
 
 #chatbox {
-    height: calc(100% - 170px) !important;
-    margin-top: 60px;
-    overflow-x: hidden;
-    /* background: red; */
+    /* height: calc(100% - 160px) !important; */
+    height: calc(100% - 80px) !important;
+    padding: 40px 20px 20px 20px !important;
+    margin-top: 60px !important;
+    overflow-x: hidden !important;
+    /* background: red !important; */
 }
 
 #sending_message_holder {
-    width: 100%;
-    position: absolute;
-    bottom: 70px;
-    /* background: yellow; */
+    width: 100% !important;
+    position: absolute !important;
+    padding: 10px 20px !important;
+    /* bottom: 60px !important; */
+    bottom: 0 !important;
+    margin-bottom: 10px !important;
+    /* background: yellow !important; */
+}
+
+#sending_message_holder .sending_message {
+    height: auto !important;
+    padding: 10px !important;
+}
+
+#sending_message_holder .sending_message textarea {
+    height: 30px !important;
+    margin-top: 9px !important;
+    padding-left: 20px !important;
+    /* background: red !important; */
 }
 
 .message.agent {
+    margin-top: 10px !important;
+    padding: 10px 20px !important;
     background: #EBEBEB !important;
 }
 
 .message.user {
+    margin-top: 10px !important;
     height: auto !important;
-    text-overflow: ellipsis;
-    /* text-align: right; */
+    padding: 10px 20px !important;
+    text-overflow: ellipsis !important;
     background: #FFE2EA !important;
 }
 
 .send_btn {
-    color: white !;
+    padding: 10px 15px !important;
+    color: white !important;
     background: var(--rosaColor) !important;
     background-image: url("../img/Arrow-Up.svg") !important;
     background-repeat: no-repeat !important;
@@ -126,10 +153,11 @@
 }
 
 #restart_btn {
-    background: white;
+    padding: 10px 15px !important;
+    background: white !important;
     background-image: url("../img/Arrow-Reload.svg") !important;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
 }
 
 .ask_button.ok,
@@ -141,6 +169,32 @@
 }
 
 #form_container form {
-    padding-top: 100px;
-    /* background: red; */
+    padding-top: 100px !important;
+    /* background: red !important; */
+}
+
+.popup_blackout {
+    display: flex !important;
+    justify-content: center !important;
+    color: white !important;
+    background: rgba(0, 0, 0, 0.90) !important;
+}
+
+.popup_blackout.hide {
+    display: none !important;
+}
+
+.popup_blackout .popup_restart_chat .win_buttons button {
+    padding: 10px 20px !important;
+}
+
+@media (max-height: 550px) {
+    .chat_wrapper {
+        height: calc(100vh - 100px) !important;
+        /* background: green !important; */
+    }
+
+    #sending_message_holder {
+        bottom: 25px !important;
+    }
 }
