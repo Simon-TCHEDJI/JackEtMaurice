@@ -388,6 +388,74 @@
 
 /**************************************************** Publication ****************************************************/
 
+.main .container .dynamic section.publicationD {
+    height: calc(100vh - 70px);
+    width: 100vw;
+    top: 10px;
+    overflow-y: auto;
+    padding-top: calc(100vh/20);
+    padding-bottom: 20px;
+}
+
+.main .container .dynamic section.publicationD .headZone {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    padding-top: 20px;
+}
+
+.main .container .dynamic section.publicationD .headZone .icon {
+    max-width: 100px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main .container .dynamic section.publicationD .headZone .icon img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.main .container .dynamic section.publicationD .headZone .icon span{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+}
+
+.main .container .dynamic section.publicationD .containerByPub {
+    padding-top: 50px;
+}
+
+.main .container .dynamic section.publicationD .containerByPub .postes {
+    padding: 15px;
+    border-radius: 10px;
+    color: rgb(31,31,31);
+    background: rgb(209,231,221);
+}
+
+.main .container .dynamic section.publicationD .containerByPub .postes .title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.main .container .dynamic section.publicationD .containerByPub .postes .instruction {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.main .container .dynamic section.publicationD .containerByPub .postes .ligne {
+    width: 100%;
+    height: 2px;
+    margin-bottom: 5px;
+    background: rgb(31,31,31);
+}
+
+/**************************************************** Publication ****************************************************/
+
 .main .container .dynamic section.publication {
     height: calc(100vh - 70px);
     width: 100vw;
